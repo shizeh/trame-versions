@@ -5,7 +5,16 @@
 <p align="center"><strong>Écrire un livre, et le voir prendre forme.</strong><br>
 Un espace d'écriture calme, et une mise en page automatique prête pour l'imprimeur.</p>
 
-<p align="center"><a href="https://github.com/shizeh/trame-versions/releases/latest"><strong>Télécharger la dernière version pour Windows</strong></a></p>
+<p align="center"><a href="https://github.com/shizeh/trame-versions/releases/latest"><img src="https://img.shields.io/github/v/release/shizeh/trame-versions?style=for-the-badge&label=T%C3%A9l%C3%A9charger%20pour%20Windows&color=7A2E5C" alt="Télécharger Trame pour Windows" /></a></p>
+
+<p align="center"><img src="captures/1-ecrire.png" width="100%" alt="Trame : écrire sur de vraies pages, au format du livre" /></p>
+
+<table>
+<tr>
+<td width="50%"><img src="captures/3-mise-en-page.png" alt="La mise en page en double page" /><br><sub>La mise en page, en double page</sub></td>
+<td width="50%"><img src="captures/2-carnet.png" alt="Le Carnet : personnages, lieux, pense-bête" /><br><sub>Le Carnet : personnages, lieux, pense-bête</sub></td>
+</tr>
+</table>
 
 ---
 
@@ -13,7 +22,11 @@ Un espace d'écriture calme, et une mise en page automatique prête pour l'impri
 - **Mettre en page** en quelques clics : 17 formats (dont 12 × 19 cm), 14 polices libres, des mises en page prêtes.
 - **Exporter** un PDF prêt pour l'impression (BoD, Amazon KDP…), typographie française comprise.
 - **Importer** un manuscrit Word (.docx), texte ou Markdown.
-- **Mode sombre**, bibliothèque de livres, notes non imprimées, et mises à jour automatiques.
+- **Typographie française pendant la frappe** : tirets de dialogue, guillemets « », espaces insécables.
+- **Correcteur d'orthographe** intégré, hors ligne.
+- **Le Carnet** de l'auteur : personnages, lieux, pense-bête.
+- **Début et fin du livre** : biographie, préface, remerciements, table des matières automatique.
+- **Mode sombre**, bibliothèque de livres, dictée vocale, et mises à jour automatiques.
 
 Vos livres restent sur votre ordinateur : Trame ne collecte aucune donnée.
 
