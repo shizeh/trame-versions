@@ -26,3 +26,5 @@ Vos livres restent sur votre ordinateur : Trame ne collecte aucune donnée.
 ---
 
 Créée par [Baptiste Shizeh](https://github.com/shizeh). Ce dépôt ne contient que les versions publiées de Trame.
+
+[Signaler un problème ou proposer une idée](https://github.com/shizeh/trame-versions/issues/new/choose) · [Confidentialité](CONFIDENTIALITE.md)
