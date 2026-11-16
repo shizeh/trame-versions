@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trame : écrire un livre, et le voir prendre forme</title>
+<meta name="description" content="Trame est une application gratuite pour Windows : écrivez votre livre sur de vraies pages, puis obtenez un PDF prêt pour l'imprimeur, sa couverture et un livre numérique EPUB.">
+<meta property="og:title" content="Trame : écrire un livre, et le voir prendre forme">
+<meta property="og:description" content="Écrivez sur de vraies pages, mettez en page comme un éditeur, exportez un PDF prêt pour l'imprimeur. Gratuit, pour Windows.">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#7A2E5C">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/EBGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SchibstedGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="/" aria-label="Trame, accueil">
+    <img src="/logo.svg" alt="" width="32" height="32">
+    <span>trame</span>
+  </a>
+  <nav class="top-nav" aria-label="Sur cette page">
+    <a href="#parcours">Découvrir</a>
+    <a href="#installer">Installer</a>
+    <a class="top-cta" href="https://github.com/shizeh/trame-versions/releases/latest" data-download>Télécharger</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Écrire un livre, et le voir prendre forme.</h1>
+    <p class="lede">Trame est un traitement de texte pensé pour les livres. Vous écrivez sur de vraies pages, au format exact de votre livre&#8239;; Trame le met en page comme un éditeur et vous donne le PDF à envoyer à l’imprimeur.</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://github.com/shizeh/trame-versions/releases/latest" data-download>
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-8 15a1 1 0 0 1 1 1v1h14v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+        Télécharger pour Windows
+      </a>
+      <p class="hero-meta">Gratuit, sans compte. <span data-version>Windows 10 et 11.</span></p>
+    </div>
+  </div>
+  <figure class="hero-shot window">
+    <img src="/img/mise-en-page.webp" srcset="/img/mise-en-page-780.webp 780w, /img/mise-en-page.webp 1560w" sizes="(max-width: 900px) 100vw, 1100px" width="1560" height="848" alt="Trame, mode Mettre en page : un chapitre composé en double page, avec le choix des mises en page et des formats à gauche.">
+  </figure>
+</section>
+
+<section class="parcours" id="parcours" aria-labelledby="parcours-h">
+  <div class="section-head">
+    <h2 id="parcours-h">Du premier mot au livre imprimé</h2>
+    <p>Les cinq étapes de Trame, dans l’ordre où vous les vivrez.</p>
+  </div>
+
+  <div class="modes" role="tablist" aria-label="Les étapes de Trame">
+    <button role="tab" id="tab-ecrire" aria-controls="panel-ecrire" aria-selected="true">Écrire</button>
+    <button role="tab" id="tab-relire" aria-controls="panel-relire" aria-selected="false" tabindex="-1">Relire</button>
+    <button role="tab" id="tab-mep" aria-controls="panel-mep" aria-selected="false" tabindex="-1">Mettre en page</button>
+    <button role="tab" id="tab-couv" aria-controls="panel-couv" aria-selected="false" tabindex="-1">Couverture</button>
+    <button role="tab" id="tab-export" aria-controls="panel-export" aria-selected="false" tabindex="-1">Exporter</button>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-ecrire" aria-labelledby="tab-ecrire">
+    <div class="panel-text">
+      <h3>Écrivez sur les vraies pages de votre livre</h3>
+      <p>Le texte passe tout seul à la page suivante, au format de l’impression. Vous savez à chaque instant combien de pages fait votre chapitre.</p>
+      <ul>
+        <li>Typographie française pendant la frappe : tirets de dialogue, guillemets « », espaces insécables.</li>
+        <li>Correcteur d’orthographe hors ligne, en français, anglais et espagnol.</li>
+        <li>Plan du livre en cartes, commentaires, notes de bas de page, images.</li>
+        <li>Import de votre manuscrit Word, texte ou Markdown.</li>
+      </ul>
+    </div>
+    <figure class="window"><img src="/img/ecrire-780.webp" srcset="/img/ecrire-780.webp 780w, /img/ecrire.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="Le mode Écrire de Trame."></figure>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-relire" aria-labelledby="tab-relire" hidden>
+    <div class="panel-text">
+      <h3>Relisez comme un lecteur</h3>
+      <p>Votre texte s’affiche comme dans un livre, en plein écran, sans les outils d’écriture. Un clic, et vous corrigez le paragraphe.</p>
+      <ul>
+        <li>Écoutez votre texte lu à voix haute, à partir de n’importe quel paragraphe.</li>
+        <li>Repérez les répétitions, les adverbes en -ment et les tournures faibles.</li>
+      </ul>
+    </div>
+    <figure class="window"><img src="/img/relire-780.webp" srcset="/img/relire-780.webp 780w, /img/relire.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="Le mode Relire de Trame."></figure>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-mep" aria-labelledby="tab-mep" hidden>
+    <div class="panel-text">
+      <h3>Une mise en page d’éditeur, en un clic</h3>
+      <p>Choisissez un format et une mise en page prête ; Trame compose le livre en double page, tel qu’il sortira de chez l’imprimeur.</p>
+      <ul>
+        <li>17 formats, du poche au grand format, et les formats Amazon KDP.</li>
+        <li>14 polices libres de qualité : Garamond, Baskerville, Caslon, Literata…</li>
+        <li>Lettrines, ornements, pages de titre, coupure des mots.</li>
+      </ul>
+    </div>
+    <figure class="window"><img src="/img/mise-en-page-780.webp" srcset="/img/mise-en-page-780.webp 780w, /img/mise-en-page.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="Le mode Mettre en page de Trame : une double page composée et le choix du format."></figure>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-couv" aria-labelledby="tab-couv" hidden>
+    <div class="panel-text">
+      <h3>Votre couverture, prête pour l’imprimeur</h3>
+      <p>Quatrième de couverture, dos et première sur une seule feuille. Le dos est calculé d’après le nombre de pages et le papier.</p>
+      <ul>
+        <li>Calcul pour Amazon KDP, BoD et les autres imprimeurs, fond perdu compris.</li>
+        <li>Modèles, palettes de couleurs, votre image, place du code-barres réservée.</li>
+      </ul>
+    </div>
+    <figure class="window"><img src="/img/couverture-780.webp" srcset="/img/couverture-780.webp 780w, /img/couverture.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="Le mode Couverture de Trame : la couverture complète avec le dos calculé."></figure>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-export" aria-labelledby="tab-export" hidden>
+    <div class="panel-text">
+      <h3>Trois fichiers, prêts à partir</h3>
+      <p>Avant d’exporter, « Mon livre est-il prêt ? » vérifie ce qui manque.</p>
+      <ul>
+        <li><strong>PDF pour l’impression</strong> : polices incluses, fonds perdus, nombre de pages pair.</li>
+        <li><strong>Livre numérique EPUB</strong> pour Kindle, Kobo et Apple Books, avec un aperçu liseuse.</li>
+        <li><strong>Manuscrit Word</strong> au format attendu par les éditeurs et les concours.</li>
+      </ul>
+    </div>
+    <figure class="files" aria-hidden="true">
+      <div class="file"><span class="file-ext">PDF</span><span class="file-name">Le Gardien du col<br>intérieur.pdf</span></div>
+      <div class="file"><span class="file-ext">EPUB</span><span class="file-name">Le Gardien du col.epub</span></div>
+      <div class="file"><span class="file-ext">DOCX</span><span class="file-name">Le Gardien du col<br>manuscrit.docx</span></div>
+    </figure>
+  </div>
+</section>
+
+<section class="aussi" aria-labelledby="aussi-h">
+  <h2 id="aussi-h">Et tout ce qui aide à finir un livre</h2>
+  <dl class="aussi-list">
+    <div><dt>Le Carnet</dt><dd>Fiches personnages et lieux, pense-bête, toujours à côté du texte.</dd></div>
+    <div><dt>Rien ne se perd</dt><dd>Historique des versions : revenez à hier, récupérez un chapitre supprimé.</dd></div>
+    <div><dt>Copie de sécurité</dt><dd>Automatique, dans le dossier de votre choix : OneDrive, clé USB…</dd></div>
+    <div><dt>Objectifs d’écriture</dt><dd>Mots du jour, statistiques, et le rythme qui va avec.</dd></div>
+    <div><dt>Plusieurs livres</dt><dd>Une bibliothèque pour tous vos projets, du roman au recueil de poèmes.</dd></div>
+    <div><dt>Mode sombre</dt><dd>Pour écrire tard sans s’abîmer les yeux.</dd></div>
+  </dl>
+  <figure class="window aussi-shot"><img src="/img/carnet-780.webp" srcset="/img/carnet-780.webp 780w, /img/carnet.webp 1560w" sizes="(max-width: 900px) 100vw, 900px" width="1560" height="848" loading="lazy" alt="Le Carnet de Trame ouvert à côté du texte, avec une fiche personnage."></figure>
+</section>
+
+<section class="prive" aria-labelledby="prive-h">
+  <h2 id="prive-h">Vos livres restent sur votre ordinateur.</h2>
+  <p>Pas de compte, pas d’abonnement, aucune donnée collectée. Trame fonctionne sans Internet. <a href="https://github.com/shizeh/trame-versions/blob/main/CONFIDENTIALITE.md">Lire la politique de confidentialité</a></p>
+</section>
+
+<section class="installer" id="installer" aria-labelledby="installer-h">
+  <h2 id="installer-h">Installer Trame</h2>
+  <ol class="steps">
+    <li>
+      <h3>Téléchargez l’installateur</h3>
+      <p><a href="https://github.com/shizeh/trame-versions/releases/latest" data-download>Télécharger pour Windows</a> <span class="muted" data-size></span></p>
+    </li>
+    <li>
+      <h3>Ouvrez-le</h3>
+      <p>Si Windows affiche « Windows a protégé votre ordinateur », cliquez sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>. Ce message apparaît pour les applications de petits éditeurs indépendants.</p>
+    </li>
+    <li>
+      <h3>C’est tout</h3>
+      <p>Trame se met ensuite à jour toute seule. Elle est en français, en anglais et en espagnol.</p>
+    </li>
+  </ol>
+  <p class="installer-note">Trame est pour l’instant disponible sur Windows 10 et 11 uniquement.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Trame est créée par Baptiste Shizeh.</p>
+  <nav aria-label="Liens utiles">
+    <a href="https://github.com/shizeh/trame-versions/issues/new/choose">Signaler un problème ou proposer une idée</a>
+    <a href="https://github.com/shizeh/trame-versions/releases">Toutes les versions</a>
+    <a href="https://github.com/shizeh/trame-versions/blob/main/CONFIDENTIALITE.md">Confidentialité</a>
+  </nav>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
