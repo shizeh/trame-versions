@@ -1,0 +1,9 @@
+// Site de Trame sur Cloudflare : on publie simplement le dossier site/.
+{
+  "name": "trame",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
