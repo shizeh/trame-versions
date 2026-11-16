@@ -1,0 +1,197 @@
+[
+ {
+  "version": "2.5.0",
+  "fr": {
+   "title": "Trame 2.5 : tout ce qui a changé",
+   "items": [
+    "Trame parle anglais et espagnol, et vos livres peuvent être écrits dans ces langues (typographie, correcteur, mots imprimés).",
+    "Livre numérique EPUB avec aperçu liseuse, et manuscrit Word pour les éditeurs et les concours.",
+    "Plan du livre en cartes, commentaires en couleur, historique des versions et copie de sécurité.",
+    "« Mon livre est-il prêt ? » vérifie tout avant de publier, et l’aide intégrée (F1) vous guide.",
+    "Et de nombreuses corrections : texte plus net dans Écrire, barre du haut lisible sur les petits écrans, mentions légales sans faute."
+   ]
+  },
+  "en": {
+   "title": "Trame 2.5: everything that’s new",
+   "items": [
+    "Trame speaks English and Spanish, and your books can be written in these languages (typography, spell checker, printed words).",
+    "EPUB ebooks with an e-reader preview, and Word manuscripts for publishers and contests.",
+    "Book outline as cards, colour comments, version history and backup copy.",
+    "“Is my book ready?” checks everything before you publish, and the built-in help (F1) guides you.",
+    "And many fixes: cleaner text in Write, a top bar that fits small screens, error-free legal notice."
+   ]
+  },
+  "es": {
+   "title": "Trame 2.5: todo lo que ha cambiado",
+   "items": [
+    "Trame habla inglés y español, y tus libros pueden escribirse en estos idiomas (tipografía, corrector, palabras impresas).",
+    "Libro electrónico EPUB con vista previa de lector, y manuscrito Word para editoriales y concursos.",
+    "Plan del libro en tarjetas, comentarios en color, historial de versiones y copia de seguridad.",
+    "«¿Está listo mi libro?» lo revisa todo antes de publicar, y la ayuda integrada (F1) te guía.",
+    "Y muchas correcciones: texto más limpio en Escribir, barra superior legible en pantallas pequeñas, aviso legal sin errores."
+   ]
+  }
+ },
+ {
+  "version": "2.1.4",
+  "fr": {
+   "title": "Merci !",
+   "items": [
+    "À propos de Trame : une nouvelle partie « Remerciements » pour celles et ceux qui aident à améliorer Trame par leurs idées et leurs retours. Merci Emma !"
+   ]
+  },
+  "en": {
+   "title": "Thank you!",
+   "items": [
+    "About Trame: a new “Thanks” section for everyone who helps improve Trame with their ideas and feedback. Thank you, Emma!"
+   ]
+  },
+  "es": {
+   "title": "¡Gracias!",
+   "items": [
+    "Acerca de Trame: una nueva sección «Agradecimientos» para quienes ayudan a mejorar Trame con sus ideas y comentarios. ¡Gracias, Emma!"
+   ]
+  }
+ },
+ {
+  "version": "2.1.3",
+  "fr": {
+   "title": "Relire, en plus pratique",
+   "items": [
+    "Après avoir corrigé un paragraphe (le crayon), le bouton « Revenir à la relecture » vous ramène au même endroit.",
+    "Relire : les deux petits boutons à gauche d’un paragraphe (écouter à partir d’ici, corriger) ne disparaissent plus quand on va cliquer dessus."
+   ]
+  },
+  "en": {
+   "title": "Read mode, made handier",
+   "items": [
+    "After fixing a paragraph (the pencil), the “Back to reading” button takes you back to the same place.",
+    "Read: the two small buttons to the left of a paragraph (listen from here, edit) no longer vanish when you go to click them."
+   ]
+  },
+  "es": {
+   "title": "Releer, más práctico",
+   "items": [
+    "Después de corregir un párrafo (el lápiz), el botón «Volver a la relectura» te lleva al mismo sitio.",
+    "Releer: los dos botoncitos a la izquierda de un párrafo (escuchar desde aquí, corregir) ya no desaparecen al ir a pulsarlos."
+   ]
+  }
+ },
+ {
+  "version": "2.1.1",
+  "fr": {
+   "title": "Commentaires en couleur",
+   "items": [
+    "Chaque commentaire peut avoir sa couleur : choisissez-la dans le Carnet, le passage se surligne de la même couleur.",
+    "Mettre en page : en quittant le plein écran, les réglages reviennent tout seuls. Le bouton « Mode lecture » s’appelle maintenant « Masquer les réglages »."
+   ]
+  },
+  "en": {
+   "title": "Comments in colour",
+   "items": [
+    "Each comment can have its own colour: choose it in the Notebook and the passage is highlighted in the same colour.",
+    "Layout: when you leave full screen, the settings come back by themselves. The “Reading mode” button is now called “Hide settings”."
+   ]
+  },
+  "es": {
+   "title": "Comentarios en color",
+   "items": [
+    "Cada comentario puede tener su color: elígelo en el Cuaderno y el pasaje se resalta con el mismo color.",
+    "Maquetar: al salir de la pantalla completa, los ajustes vuelven solos. El botón «Modo lectura» ahora se llama «Ocultar ajustes»."
+   ]
+  }
+ },
+ {
+  "version": "2.1.0",
+  "fr": {
+   "title": "Les nouveautés, expliquées",
+   "items": [
+    "Après chaque mise à jour, cette fenêtre vous dit ce qui a changé. Vous la retrouvez dans les Réglages → « Nouveautés ».",
+    "Carnet : les fiches grandissent avec votre texte, et « Agrandir » ouvre la fiche en grand.",
+    "« Plan du livre » est plus visible dans la colonne de gauche d’Écrire.",
+    "Crédits : espaces dans les noms, et flèches pour changer l’ordre."
+   ]
+  },
+  "en": {
+   "title": "What's new, explained",
+   "items": [
+    "After each update, this window tells you what changed. You can find it again in Settings → “What's new”.",
+    "Notebook: cards grow with your text, and “Enlarge” opens the card in a large view.",
+    "“Book outline” is easier to spot in the left column of Write.",
+    "Credits: spaces in names, and arrows to change the order."
+   ]
+  },
+  "es": {
+   "title": "Las novedades, explicadas",
+   "items": [
+    "Después de cada actualización, esta ventana te cuenta lo que ha cambiado. La encuentras en Ajustes → «Novedades».",
+    "Cuaderno: las fichas crecen con tu texto, y «Ampliar» abre la ficha en grande.",
+    "«Esquema del libro» se ve mejor en la columna izquierda de Escribir.",
+    "Créditos: espacios en los nombres y flechas para cambiar el orden."
+   ]
+  }
+ },
+ {
+  "version": "2.0.3",
+  "fr": {
+   "title": "Plus de confort",
+   "items": [
+    "Mettre en page s’ouvre sur le chapitre que vous étiez en train d’écrire.",
+    "Crédits sur la page de copyright : relecture, correction, illustrations, couverture…",
+    "L’éditeur n’est plus répété sur la page de titre et la couverture, sauf si vous cochez la case.",
+    "Nouveau style « Sans alinéa » (Ctrl+6), et réglage « Aucun » alinéa pour tout le livre."
+   ]
+  },
+  "en": {
+   "title": "More comfort",
+   "items": [
+    "Layout opens on the chapter you were writing.",
+    "Credits on the copyright page: proofreading, copy-editing, illustrations, cover…",
+    "The publisher is no longer repeated on the title page and the cover, unless you tick the box.",
+    "New “No indent” style (Ctrl+6), and a “None” indent setting for the whole book."
+   ]
+  },
+  "es": {
+   "title": "Más comodidad",
+   "items": [
+    "Maquetar se abre en el capítulo que estabas escribiendo.",
+    "Créditos en la página de créditos: revisión, corrección, ilustraciones, cubierta…",
+    "La editorial ya no se repite en la portadilla ni en la cubierta, salvo que marques la casilla.",
+    "Nuevo estilo «Sin sangría» (Ctrl+6) y ajuste de sangría «Ninguno» para todo el libro."
+   ]
+  }
+ },
+ {
+  "version": "2.0.0",
+  "fr": {
+   "title": "Du premier mot au livre publié",
+   "items": [
+    "Plan du livre : vos chapitres en cartes, à résumer et à réorganiser.",
+    "Commentaires : sélectionnez un passage et cliquez sur la bulle pour vous laisser une remarque.",
+    "Export Word pour les éditeurs et les concours, et livre numérique EPUB avec aperçu liseuse.",
+    "« Mon livre est-il prêt ? » vérifie votre livre avant de publier (onglet Exporter).",
+    "Aide intégrée : le bouton « ? » ou la touche F1."
+   ]
+  },
+  "en": {
+   "title": "From the first word to the published book",
+   "items": [
+    "Book outline: your chapters as cards, to summarise and reorganise.",
+    "Comments: select a passage and click the speech bubble to leave yourself a remark.",
+    "Word export for publishers and contests, and EPUB ebook with an e-reader preview.",
+    "“Is my book ready?” checks your book before you publish (Export tab).",
+    "Built-in help: the “?” button or the F1 key."
+   ]
+  },
+  "es": {
+   "title": "De la primera palabra al libro publicado",
+   "items": [
+    "Esquema del libro: tus capítulos en tarjetas, para resumir y reorganizar.",
+    "Comentarios: selecciona un pasaje y haz clic en la burbuja para dejarte una observación.",
+    "Exportación a Word para editoriales y concursos, y libro electrónico EPUB con vista previa.",
+    "«¿Está listo mi libro?» revisa tu libro antes de publicar (pestaña Exportar).",
+    "Ayuda integrada: el botón «?» o la tecla F1."
+   ]
+  }
+ }
+]

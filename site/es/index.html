@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trame: escribe un libro y míralo tomar forma</title>
+<meta name="description" content="Trame es una aplicación gratuita para Windows: escribe tu libro en páginas reales y obtén un PDF listo para la imprenta, su cubierta y un libro electrónico EPUB.">
+<meta property="og:title" content="Trame: escribe un libro y míralo tomar forma">
+<meta property="og:description" content="Trame es una aplicación gratuita para Windows: escribe tu libro en páginas reales y obtén un PDF listo para la imprenta, su cubierta y un libro electrónico EPUB.">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#7A2E5C">
+<link rel="canonical" href="/es/">
+<link rel="alternate" hreflang="fr" href="/">
+<link rel="alternate" hreflang="en" href="/en/">
+<link rel="alternate" hreflang="es" href="/es/">
+<link rel="alternate" hreflang="x-default" href="/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/EBGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SchibstedGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-lang="es">
+
+<header class="top">
+  <a class="brand" href="/es/" aria-label="Trame, inicio">
+    <img src="/logo.svg" alt="" width="32" height="32">
+    <span>trame</span>
+  </a>
+  <nav class="top-nav" aria-label="Navegación">
+    <a href="#parcours">Descubrir</a>
+    <a href="#faq">Preguntas</a>
+    <a href="/es/novedades/">Novedades</a>
+    <span class="langs" role="group" aria-label="Idioma"><a href="/" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/" hreflang="en" lang="en" data-setlang="en">EN</a><a href="/es/" hreflang="es" lang="es" data-setlang="es" aria-current="true">ES</a></span>
+    <a class="top-cta" href="https://github.com/shizeh/trame-versions/releases/latest" data-download>Descargar</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Escribe un libro y míralo tomar forma.</h1>
+    <p class="lede">Trame es un procesador de textos pensado para libros. Escribes en páginas reales, con el formato exacto de tu libro; Trame lo maqueta como una editorial y te da el PDF para enviar a la imprenta.</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://github.com/shizeh/trame-versions/releases/latest" data-download><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-8 15a1 1 0 0 1 1 1v1h14v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg> Descargar para Windows</a>
+      <a class="store" href="https://get.microsoft.com/installer/download/9n85tsx3h531?referrer=appbadge" aria-label="Obtener Trame en Microsoft Store"><img src="https://get.microsoft.com/images/es-es%20dark.svg" onerror="this.onerror=null;this.src='https://get.microsoft.com/images/en-us%20dark.svg'" width="168" height="62" alt=""></a>
+      <p class="hero-meta">Gratis, sin cuenta. <span data-version>Windows 10 y 11.</span></p>
+    </div>
+  </div>
+  <figure class="hero-video">
+    <video autoplay muted loop playsinline preload="metadata" poster="/video/trame-es.webp" aria-label="Trame en 15 segundos: tú escribes, Trame maqueta el libro y prepara su cubierta.">
+      <source src="/video/trame-es.mp4" type="video/mp4">
+    </video>
+  </figure>
+</section>
+
+<section class="parcours" id="parcours" aria-labelledby="parcours-h">
+  <div class="section-head">
+    <h2 id="parcours-h">De la primera palabra al libro impreso</h2>
+    <p>Las cinco etapas de Trame, en el orden en que las vivirás.</p>
+  </div>
+  <div class="modes" role="tablist" aria-label="Las etapas de Trame">
+    <button role="tab" id="tab-ecrire" aria-controls="panel-ecrire" aria-selected="true">Escribir</button><button role="tab" id="tab-relire" aria-controls="panel-relire" aria-selected="false" tabindex="-1">Releer</button><button role="tab" id="tab-mep" aria-controls="panel-mep" aria-selected="false" tabindex="-1">Maquetar</button><button role="tab" id="tab-couv" aria-controls="panel-couv" aria-selected="false" tabindex="-1">Cubierta</button><button role="tab" id="tab-export" aria-controls="panel-export" aria-selected="false" tabindex="-1">Exportar</button>
+  </div>
+  
+  <div class="panel" role="tabpanel" id="panel-ecrire" aria-labelledby="tab-ecrire">
+    <div class="panel-text">
+      <h3>Escribe en las páginas reales de tu libro</h3>
+      <p>El texto pasa solo a la página siguiente, con el formato de la impresión. Sabes en todo momento cuántas páginas tiene tu capítulo.</p>
+      <ul><li>Tipografía automática mientras escribes: raya de diálogo, comillas «», espacios correctos.</li><li>Corrector ortográfico sin conexión, en español, inglés y francés.</li><li>Esquema del libro en tarjetas, comentarios, notas al pie, imágenes.</li><li>Importación de tu manuscrito Word, texto o Markdown.</li></ul>
+    </div>
+    <figure class="window"><img src="/img/es/ecrire-780.webp" srcset="/img/es/ecrire-780.webp 780w, /img/es/ecrire.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="El modo Escribir de Trame: el primer capítulo en una página real."></figure>
+  </div>
+  <div class="panel" role="tabpanel" id="panel-relire" aria-labelledby="tab-relire" hidden>
+    <div class="panel-text">
+      <h3>Relee como un lector</h3>
+      <p>Tu texto se muestra como en un libro, a pantalla completa, sin las herramientas de escritura. Un clic y corriges el párrafo.</p>
+      <ul><li>Escucha tu texto leído en voz alta, desde cualquier párrafo.</li><li>Detecta repeticiones, adverbios en -mente y construcciones débiles.</li></ul>
+    </div>
+    <figure class="window"><img src="/img/es/relire-780.webp" srcset="/img/es/relire-780.webp 780w, /img/es/relire.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="El modo Releer de Trame, con las repeticiones resaltadas."></figure>
+  </div>
+  <div class="panel" role="tabpanel" id="panel-mep" aria-labelledby="tab-mep" hidden>
+    <div class="panel-text">
+      <h3>Una maquetación de editorial, en un clic</h3>
+      <p>Elige un formato y una maquetación lista; Trame compone el libro en doble página, tal como saldrá de la imprenta.</p>
+      <ul><li>17 formatos, del bolsillo al gran formato, y los formatos de Amazon KDP.</li><li>14 fuentes libres de calidad: Garamond, Baskerville, Caslon, Literata…</li><li>Capitulares, ornamentos, portadillas, división de palabras.</li></ul>
+    </div>
+    <figure class="window"><img src="/img/es/mise-en-page-780.webp" srcset="/img/es/mise-en-page-780.webp 780w, /img/es/mise-en-page.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="El modo Maquetar de Trame: una doble página compuesta y la elección del formato."></figure>
+  </div>
+  <div class="panel" role="tabpanel" id="panel-couv" aria-labelledby="tab-couv" hidden>
+    <div class="panel-text">
+      <h3>Tu cubierta, lista para la imprenta</h3>
+      <p>Contracubierta, lomo y cubierta en una sola hoja. El lomo se calcula según el número de páginas y el papel.</p>
+      <ul><li>Cálculo para Amazon KDP, BoD y otras imprentas, sangrado incluido.</li><li>Modelos, paletas de colores, tu imagen, espacio reservado para el código de barras.</li></ul>
+    </div>
+    <figure class="window"><img src="/img/es/couverture-780.webp" srcset="/img/es/couverture-780.webp 780w, /img/es/couverture.webp 1560w" sizes="(max-width: 900px) 100vw, 640px" width="1560" height="848" loading="lazy" alt="El modo Cubierta de Trame: la cubierta completa con el lomo calculado."></figure>
+  </div>
+  <div class="panel" role="tabpanel" id="panel-export" aria-labelledby="tab-export" hidden>
+    <div class="panel-text">
+      <h3>Tres archivos, listos para salir</h3>
+      <p>Antes de exportar, «¿Está listo mi libro?» revisa lo que falta.</p>
+      <ul><li><strong>PDF para imprimir</strong>: fuentes incrustadas, sangrado, número par de páginas.</li><li><strong>Libro electrónico EPUB</strong> para Kindle, Kobo y Apple Books, con vista previa de lector.</li><li><strong>Manuscrito Word</strong> con el formato que piden editoriales y concursos.</li></ul>
+    </div>
+    <figure class="files" aria-hidden="true"><div class="file"><span class="file-ext">PDF</span><span class="file-name">El guardián del paso<br>interior.pdf</span></div><div class="file"><span class="file-ext">EPUB</span><span class="file-name">El guardián del paso.epub</span></div><div class="file"><span class="file-ext">DOCX</span><span class="file-name">El guardián del paso<br>manuscrito.docx</span></div></figure>
+  </div>
+</section>
+
+<section class="aussi" aria-labelledby="aussi-h">
+  <h2 id="aussi-h">Y todo lo que ayuda a terminar un libro</h2>
+  <dl class="aussi-list"><div><dt>El Cuaderno</dt><dd>Fichas de personajes y lugares, recordatorios, siempre junto al texto.</dd></div><div><dt>Nada se pierde</dt><dd>Historial de versiones: vuelve a ayer, recupera un capítulo borrado.</dd></div><div><dt>Copia de seguridad</dt><dd>Automática, en la carpeta que elijas: OneDrive, memoria USB…</dd></div><div><dt>Objetivos de escritura</dt><dd>Palabras del día, estadísticas y el ritmo que las acompaña.</dd></div><div><dt>Varios libros</dt><dd>Una biblioteca para todos tus proyectos, de la novela al poemario.</dd></div><div><dt>Modo oscuro</dt><dd>Para escribir de noche sin cansar la vista.</dd></div></dl>
+  <div class="aussi-shot"><figure class="window"><img src="/img/es/carnet-780.webp" srcset="/img/es/carnet-780.webp 780w, /img/es/carnet.webp 1560w" sizes="(max-width: 900px) 100vw, 900px" width="1560" height="848" loading="lazy" alt="El Cuaderno de Trame abierto junto al texto, con tres fichas de personajes."></figure></div>
+</section>
+
+<section class="sample" aria-labelledby="sample-h">
+  <div class="sample-book" aria-hidden="true"><span>El guardián del paso</span></div>
+  <div class="sample-text">
+    <h2 id="sample-h">Juzga por ti mismo</h2>
+    <p>Descarga el libro de ejemplo tal como Trame lo maqueta: el PDF exacto que iría a la imprenta, con fuentes y márgenes.</p>
+    <a class="btn btn-light" href="/exemple/el-guardian-del-paso.pdf" download><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-8 15a1 1 0 0 1 1 1v1h14v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg> El libro de ejemplo (PDF, 12 páginas)</a>
+  </div>
+</section>
+
+<section class="prive" aria-labelledby="prive-h">
+  <h2 id="prive-h">Tus libros se quedan en tu ordenador.</h2>
+  <p>Sin cuenta, sin suscripción, sin datos recopilados. Trame funciona sin Internet. <a href="https://github.com/shizeh/trame-versions/blob/main/CONFIDENTIALITE.md">Leer la política de privacidad</a></p>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Preguntas frecuentes</h2>
+  <div class="faq-list"><details><summary>¿Trame es realmente gratis?</summary><div class="faq-a">Sí. Sin suscripción, sin publicidad, sin cuenta que crear.</div></details><details><summary>¿Funciona en Mac?</summary><div class="faq-a">Por ahora no: Trame funciona en Windows 10 y 11.</div></details><details><summary>¿Puedo publicar en Amazon KDP con Trame?</summary><div class="faq-a">Sí. Trame conoce los formatos de KDP y calcula el lomo de la cubierta para KDP. Obtienes el PDF del interior y el de la cubierta, listos para subir, y un EPUB para Kindle. Antes de exportar, «¿Está listo mi libro?» revisa lo que falta.</div></details><details><summary>¿Dónde se guardan mis libros?</summary><div class="faq-a">Solo en tu ordenador. Trame también puede hacer una copia de seguridad automática en la carpeta que elijas (OneDrive, memoria USB…) y guarda el historial de versiones de cada libro.</div></details><details><summary>¿Puedo continuar un manuscrito ya empezado?</summary><div class="faq-a">Sí: Trame importa archivos Word (.docx), de texto y Markdown.</div></details><details><summary>¿Microsoft Store o descarga directa?</summary><div class="faq-a">Es la misma aplicación. Desde <a href="https://apps.microsoft.com/detail/9n85tsx3h531">Microsoft Store</a>, se instala sin ningún aviso y recibes las versiones principales. Con la descarga directa, recibes todas las novedades en cuanto salen.</div></details><details><summary>¿Por qué Windows muestra un aviso al instalar?</summary><div class="faq-a">Windows muestra este mensaje con las aplicaciones de pequeños desarrolladores independientes que aún no conoce. Haz clic en <strong>Más información</strong> y luego en <strong>Ejecutar de todas formas</strong>. Desde Microsoft Store, el mensaje no aparece.</div></details><details><summary>¿Cómo informo de un problema o propongo una idea?</summary><div class="faq-a">Con <a href="https://github.com/shizeh/trame-versions/issues/new/choose">este formulario</a>, o por mensaje en <a href="https://www.instagram.com/baptisteshizeh/">Instagram</a>. Se leen todos los mensajes.</div></details></div>
+</section>
+
+<section class="installer" id="installer" aria-labelledby="installer-h">
+  <h2 id="installer-h">Instalar Trame</h2>
+  <ol class="steps"><li><h3>Descarga el instalador</h3><p><a href="https://github.com/shizeh/trame-versions/releases/latest" data-download>Descargar para Windows</a> <span class="muted" data-size></span></p></li><li><h3>Ábrelo</h3><p>Si Windows muestra «Windows protegió su PC», haz clic en <strong>Más información</strong> y luego en <strong>Ejecutar de todas formas</strong>. Este mensaje aparece con las aplicaciones de pequeños desarrolladores independientes.</p></li><li><h3>Eso es todo</h3><p>Después, Trame se actualiza sola. Está en español, inglés y francés.</p></li></ol>
+  <div class="store-alt">
+    <p><strong>¿Prefieres Microsoft Store?</strong> Trame también está allí, sin avisos al instalar. La Store recibe las versiones principales; la descarga directa recibe todas las novedades en cuanto salen.</p>
+    <a class="store" href="https://apps.microsoft.com/detail/9n85tsx3h531" aria-label="Ver Trame en Microsoft Store"><img src="https://get.microsoft.com/images/es-es%20dark.svg" onerror="this.onerror=null;this.src='https://get.microsoft.com/images/en-us%20dark.svg'" width="168" height="62" alt="" loading="lazy"></a>
+  </div>
+  <p class="installer-note">Por ahora, Trame solo está disponible para Windows 10 y 11.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-who">
+    <p>Trame es obra de Baptiste Shizeh.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/baptisteshizeh/" rel="me noopener" aria-label="Instagram @baptisteshizeh"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 4.2c2.5 0 2.8 0 3.8.1 2.6.1 3.8 1.3 3.9 3.9.1 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.6-1.3 3.8-3.9 3.9-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.6-.1-3.8-1.3-3.9-3.9-.1-1-.1-1.3-.1-3.8s0-2.8.1-3.8C4.4 5.6 5.6 4.4 8.2 4.3c1-.1 1.3-.1 3.8-.1ZM12 2.5c-2.6 0-2.9 0-3.9.1-3.5.2-5.4 2.1-5.6 5.6-.1 1-.1 1.3-.1 3.8s0 2.9.1 3.9c.2 3.5 2.1 5.4 5.6 5.6 1 .1 1.3.1 3.9.1s2.9 0 3.9-.1c3.5-.2 5.4-2.1 5.6-5.6.1-1 .1-1.3.1-3.9s0-2.8-.1-3.8c-.2-3.5-2.1-5.4-5.6-5.6-1-.1-1.3-.1-3.9-.1Z"/></svg><span>@baptisteshizeh</span></a>
+      <a href="https://github.com/shizeh" rel="me noopener" aria-label="GitHub @shizeh"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2.2Z"/></svg><span>@shizeh</span></a>
+    </div>
+  </div>
+  <nav aria-label="Enlaces útiles">
+    <a href="https://github.com/shizeh/trame-versions/issues/new/choose">Informar de un problema o proponer una idea</a>
+    <a href="/es/novedades/">Novedades</a>
+    <a href="https://github.com/shizeh/trame-versions/releases">Todas las versiones</a>
+    <a href="https://github.com/shizeh/trame-versions/blob/main/CONFIDENTIALITE.md">Privacidad</a>
+  </nav>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
