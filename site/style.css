@@ -236,3 +236,22 @@ main > .prive {
 .file-ext { font-weight: 600; font-size: 0.85rem; color: var(--prune); }
 .file-name { font-family: var(--serif); font-size: 1rem; line-height: 1.25; }
 .file:nth-child(2) { transform: translateY(18px); }
+
+/* Microsoft Store */
+.store { display: inline-flex; border-radius: var(--r-sm); }
+.store img { height: 54px; width: auto; }
+.hero-meta { flex-basis: 100%; }
+.store-alt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 32px;
+  margin-top: 44px;
+  padding: 24px 28px;
+  border-radius: var(--r-lg);
+  background: var(--paper);
+  box-shadow: 0 0 0 1px rgb(23 22 26 / 0.05);
+}
+.store-alt p { max-width: 46em; color: var(--muted); }
+.store-alt strong { color: var(--ink); }
