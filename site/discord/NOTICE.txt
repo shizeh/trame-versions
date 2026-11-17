@@ -1,0 +1,4 @@
+Images du statut Discord de Trame.
+trame.gif : logo Trame animé, © Baptiste Shizeh.
+Icônes d'étape (*.png) : dessins tirés de Lucide (https://lucide.dev),
+licence ISC — Copyright (c) Lucide Contributors.
