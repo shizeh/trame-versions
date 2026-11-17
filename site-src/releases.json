@@ -1,5 +1,26 @@
 [
  {
+  "version": "2.5.1",
+  "fr": {
+   "title": "L'italique reste en italique",
+   "items": [
+    "Du texte en italique dans une citation (ou dans un style de caractère déjà en italique) s'imprimait droit dans Mettre en page, le PDF et le manuscrit Word. Il reste maintenant en italique, comme dans Écrire. Merci Emma !"
+   ]
+  },
+  "en": {
+   "title": "Italics stay italic",
+   "items": [
+    "Italic text inside a quote (or inside a character style that is already italic) was printed upright in Layout, the PDF and the Word manuscript. It now stays italic, just like in Write. Thank you, Emma!"
+   ]
+  },
+  "es": {
+   "title": "La cursiva sigue en cursiva",
+   "items": [
+    "El texto en cursiva dentro de una cita (o de un estilo de carácter que ya está en cursiva) se imprimía en redonda en Maquetar, el PDF y el manuscrito Word. Ahora sigue en cursiva, como en Escribir. ¡Gracias, Emma!"
+   ]
+  }
+ },
+ {
   "version": "2.5.0",
   "fr": {
    "title": "Trame 2.5 : tout ce qui a changé",
