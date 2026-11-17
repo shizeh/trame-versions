@@ -1,5 +1,32 @@
 [
  {
+  "version": "2.6.0",
+  "fr": {
+   "title": "Un statut Discord à votre goût",
+   "items": [
+    "Réglages → Discord → Personnaliser le statut : logo Trame animé ou fixe, et vous choisissez ce que voient vos amis (ce que vous faites, le titre, le chapitre, les mots, le temps passé). Un aperçu montre le résultat.",
+    "Une petite icône indique l’étape (Écrire, Mettre en page…), et un bouton « Découvrir Trame » mène au site.",
+    "Mettre en page : des flèches de chaque côté de la double page pour tourner les pages, toujours visibles, même en zoomant. Merci Emma !"
+   ]
+  },
+  "en": {
+   "title": "A Discord status your way",
+   "items": [
+    "Settings → Discord → Customize the status: animated or still Trame logo, and you choose what your friends see (what you are doing, the title, the chapter, the words, the time spent). A preview shows the result.",
+    "A small icon shows the step (Write, Layout…), and a “Discover Trame” button leads to the website.",
+    "Layout: arrows on each side of the spread to turn pages, always visible, even when zoomed in. Thank you, Emma!"
+   ]
+  },
+  "es": {
+   "title": "Un estado de Discord a tu gusto",
+   "items": [
+    "Ajustes → Discord → Personalizar el estado: logo de Trame animado o fijo, y eliges lo que ven tus amigos (lo que haces, el título, el capítulo, las palabras, el tiempo). Una vista previa muestra el resultado.",
+    "Un pequeño icono indica la etapa (Escribir, Maquetar…), y un botón «Descubrir Trame» lleva a la web.",
+    "Maquetar: flechas a cada lado de la doble página para pasar las páginas, siempre visibles, incluso con zoom. ¡Gracias, Emma!"
+   ]
+  }
+ },
+ {
   "version": "2.5.1",
   "fr": {
    "title": "L'italique reste en italique",
