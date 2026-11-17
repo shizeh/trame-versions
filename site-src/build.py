@@ -16,7 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 SRC = Path(__file__).resolve().parent
-URL = ""  # domaine du site, par ex. "https://trame.exemple" : à renseigner pour des liens hreflang absolus
+URL = "https://trame.shizeh.workers.dev"  # adresse du site (liens canoniques, hreflang, sitemap)
+SHIZEH = "https://shizeh.com"
 
 DL = "https://github.com/shizeh/trame-versions/releases/latest"
 STORE_GET = "https://get.microsoft.com/installer/download/9n85tsx3h531?referrer=appbadge"
@@ -49,6 +50,57 @@ def attr(s):
     return html.escape(s, quote=True)
 
 
+def jsonld(lang):
+    """Données structurées (schema.org) : l'application, le site et son auteur."""
+    t = T[lang]
+    L = LANGS[lang]
+    try:
+        version = json.loads((SRC / "releases.json").read_text(encoding="utf-8"))[0]["version"]
+    except Exception:
+        version = None
+    author = {
+        "@type": "Person",
+        "@id": f"{URL}/#auteur",
+        "name": "Baptiste Shizeh",
+        "alternateName": "Shizeh",
+        "url": SHIZEH,
+        "sameAs": [SHIZEH, INSTAGRAM, GITHUB],
+    }
+    app = {
+        "@type": "SoftwareApplication",
+        "@id": f"{URL}/#app",
+        "name": "Trame",
+        "alternateName": ["Trame app", "Trame Shizeh"],
+        "description": t["description"],
+        "url": f"{URL}{L['home']}",
+        "applicationCategory": "DesignApplication",
+        "applicationSubCategory": t["seo_category"],
+        "operatingSystem": "Windows 10, Windows 11",
+        "inLanguage": ["fr", "en", "es"],
+        "isAccessibleForFree": True,
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+        "downloadUrl": DL,
+        "installUrl": STORE_PAGE,
+        "screenshot": f"{URL}/img/og.jpg",
+        "image": f"{URL}/logo.svg",
+        "author": {"@id": f"{URL}/#auteur"},
+        "publisher": {"@id": f"{URL}/#auteur"},
+    }
+    if version:
+        app["softwareVersion"] = version
+    site = {
+        "@type": "WebSite",
+        "@id": f"{URL}/#site",
+        "name": "Trame",
+        "alternateName": "Trame app",
+        "url": f"{URL}/",
+        "inLanguage": lang,
+        "publisher": {"@id": f"{URL}/#auteur"},
+    }
+    data = {"@context": "https://schema.org", "@graph": [app, site, author]}
+    return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False) + "</script>"
+
+
 def head(lang, page, title, description):
     L = LANGS[lang]
     alts = "\n".join(
@@ -63,8 +115,18 @@ def head(lang, page, title, description):
 <meta name="description" content="{attr(description)}">
 <meta property="og:title" content="{attr(title)}">
 <meta property="og:description" content="{attr(description)}">
-<meta property="og:image" content="/img/og.jpg">
+<meta name="author" content="Baptiste Shizeh">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="Trame">
+<meta property="og:url" content="{URL}{L[page]}">
+<meta property="og:image" content="{URL}/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{attr(title)}">
+<meta name="twitter:description" content="{attr(description)}">
+<meta name="twitter:image" content="{URL}/img/og.jpg">
 <meta property="og:locale" content="{ {'fr': 'fr_FR', 'en': 'en_US', 'es': 'es_ES'}[lang] }">
 <meta name="theme-color" content="#7A2E5C">
 <link rel="canonical" href="{URL}{L[page]}">
@@ -73,6 +135,7 @@ def head(lang, page, title, description):
 <link rel="preload" href="/fonts/EBGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/SchibstedGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
+{jsonld(lang) if page == "home" else ""}
 </head>
 <body data-lang="{lang}">
 """
@@ -270,6 +333,22 @@ def news(lang):
 """
     return head(lang, "news", t["news_title"], t["news_p"]) + topbar(lang, "news", t, False) + body + footer(lang, t)
 
+
+def sitemap():
+    rows = []
+    for page in ("home", "news"):
+        alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{URL}{LANGS[l][page]}"/>' for l in LANGS)
+        alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{URL}{LANGS["fr"][page]}"/>'
+        for l in LANGS:
+            rows.append(f"  <url><loc>{URL}{LANGS[l][page]}</loc>{alts}</url>")
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+            + "\n".join(rows) + "\n</urlset>\n")
+
+
+(SITE / "sitemap.xml").write_text(sitemap(), encoding="utf-8")
+(SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {URL}/sitemap.xml\n", encoding="utf-8")
+print("→ site/sitemap.xml, site/robots.txt")
 
 for lang, L in LANGS.items():
     for page, fn in (("home", home), ("news", news)):
