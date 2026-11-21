@@ -361,3 +361,8 @@ main.news > section + section { margin-top: clamp(40px, 6vw, 64px); }
 .release li { position: relative; padding-left: 22px; margin-top: 8px; color: var(--muted); }
 .release li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 50%; background: var(--prune); }
 .news-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+
+/* Qui crée Trame */
+.author { text-align: center; }
+.author h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; text-wrap: balance; }
+.author p { max-width: 38em; margin: 18px auto 26px; color: var(--muted); text-wrap: pretty; }

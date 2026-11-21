@@ -288,6 +288,12 @@ def home(lang):
   <div class="faq-list">{faq}</div>
 </section>
 
+<section class="author" aria-labelledby="author-h">
+  <h2 id="author-h">{t['author_h']}</h2>
+  <p>{t['author_p']}</p>
+  <a class="btn btn-light" href="{SHIZEH}" rel="author">{t['author_btn']}</a>
+</section>
+
 <section class="installer" id="installer" aria-labelledby="installer-h">
   <h2 id="installer-h">{t['install_h']}</h2>
   <ol class="steps">{steps}</ol>

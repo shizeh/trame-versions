@@ -200,7 +200,10 @@
     "news_all": "Le détail de chaque version sur GitHub",
     "version": "Version",
     "latest": "Dernière version",
-    "seo_category": "Écriture et mise en page de livres"
+    "seo_category": "Écriture et mise en page de livres",
+    "author_h": "Créée par un auteur, pour les auteurs",
+    "author_p": "Je m’appelle Baptiste Shizeh. En écrivant mon premier roman, j’ai voulu un outil simple pour aller du manuscrit au livre imprimé : c’est devenu Trame. Elle est gratuite, parce qu’écrire et publier un livre devrait être à la portée de tout le monde.",
+    "author_btn": "Découvrir Baptiste Shizeh"
   },
   "en": {
     "title": "Trame, the free app to write and format your book",
@@ -403,7 +406,10 @@
     "news_all": "Full details of every version on GitHub",
     "version": "Version",
     "latest": "Latest version",
-    "seo_category": "Book writing and formatting"
+    "seo_category": "Book writing and formatting",
+    "author_h": "Made by an author, for authors",
+    "author_p": "I’m Baptiste Shizeh. While writing my first novel, I wanted a simple tool to go from manuscript to printed book: that became Trame. It’s free, because writing and publishing a book should be within everyone’s reach.",
+    "author_btn": "Discover Baptiste Shizeh"
   },
   "es": {
     "title": "Trame, la app gratuita para escribir y maquetar tu libro",
@@ -606,6 +612,9 @@
     "news_all": "El detalle de cada versión en GitHub",
     "version": "Versión",
     "latest": "Última versión",
-    "seo_category": "Escritura y maquetación de libros"
+    "seo_category": "Escritura y maquetación de libros",
+    "author_h": "Creada por un autor, para autores",
+    "author_p": "Me llamo Baptiste Shizeh. Mientras escribía mi primera novela, quise una herramienta sencilla para pasar del manuscrito al libro impreso: así nació Trame. Es gratuita, porque escribir y publicar un libro debería estar al alcance de todos.",
+    "author_btn": "Descubrir a Baptiste Shizeh"
   }
 }
