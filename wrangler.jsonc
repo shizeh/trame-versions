@@ -1,9 +1,13 @@
-// Site de Trame sur Cloudflare : on publie simplement le dossier site/.
+// Worker « trame » (ancienne adresse trame.shizeh.workers.dev).
+// Le vrai site est servi par Cloudflare Pages (projet trame-site) sur trame.shizeh.com ;
+// ce Worker redirige vers lui, sauf /discord/* (voir worker.js).
 {
   "name": "trame",
+  "main": "worker.js",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./site",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "run_worker_first": true
   }
 }
