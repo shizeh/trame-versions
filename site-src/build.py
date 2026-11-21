@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 SRC = Path(__file__).resolve().parent
-URL = "https://trame.shizeh.workers.dev"  # adresse du site (liens canoniques, hreflang, sitemap)
+URL = "https://trame.shizeh.com"  # adresse du site (liens canoniques, hreflang, sitemap)
 SHIZEH = "https://shizeh.com"
 
 DL = "https://github.com/shizeh/trame-versions/releases/latest"
