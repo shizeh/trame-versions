@@ -91,15 +91,15 @@
     "files": [
       [
         "PDF",
-        "Le Gardien du col<br>intérieur.pdf"
+        "Mira<br>intérieur.pdf"
       ],
       [
         "EPUB",
-        "Le Gardien du col.epub"
+        "Mira.epub"
       ],
       [
         "DOCX",
-        "Le Gardien du col<br>manuscrit.docx"
+        "Mira<br>manuscrit.docx"
       ]
     ],
     "aussi_h": "Et tout ce qui aide à finir un livre",
@@ -130,7 +130,7 @@
       ]
     ],
     "carnet_alt": "Le Carnet de Trame ouvert à côté du texte, avec trois fiches personnages.",
-    "sample_book": "Le Gardien du col",
+    "sample_book": "Mira",
     "sample_h": "Jugez sur pièce",
     "sample_p": "Téléchargez le livre d’exemple tel que Trame le met en page : le PDF exact qui partirait chez l’imprimeur, polices et marges comprises.",
     "sample_btn": "Le livre d’exemple (PDF, 12 pages)",
@@ -297,15 +297,15 @@
     "files": [
       [
         "PDF",
-        "The Keeper of the Pass<br>interior.pdf"
+        "Mira<br>interior.pdf"
       ],
       [
         "EPUB",
-        "The Keeper of the Pass.epub"
+        "Mira.epub"
       ],
       [
         "DOCX",
-        "The Keeper of the Pass<br>manuscript.docx"
+        "Mira<br>manuscript.docx"
       ]
     ],
     "aussi_h": "And everything that helps you finish a book",
@@ -336,7 +336,7 @@
       ]
     ],
     "carnet_alt": "Trame’s Notebook open next to the text, with three character cards.",
-    "sample_book": "The Keeper of the Pass",
+    "sample_book": "Mira",
     "sample_h": "See for yourself",
     "sample_p": "Download the sample book exactly as Trame lays it out: the very PDF that would go to the printer, fonts and margins included.",
     "sample_btn": "The sample book (PDF, 12 pages)",
@@ -503,15 +503,15 @@
     "files": [
       [
         "PDF",
-        "El guardián del paso<br>interior.pdf"
+        "Mira<br>interior.pdf"
       ],
       [
         "EPUB",
-        "El guardián del paso.epub"
+        "Mira.epub"
       ],
       [
         "DOCX",
-        "El guardián del paso<br>manuscrito.docx"
+        "Mira<br>manuscrito.docx"
       ]
     ],
     "aussi_h": "Y todo lo que ayuda a terminar un libro",
@@ -542,7 +542,7 @@
       ]
     ],
     "carnet_alt": "El Cuaderno de Trame abierto junto al texto, con tres fichas de personajes.",
-    "sample_book": "El guardián del paso",
+    "sample_book": "Mira",
     "sample_h": "Juzga por ti mismo",
     "sample_p": "Descarga el libro de ejemplo tal como Trame lo maqueta: el PDF exacto que iría a la imprenta, con fuentes y márgenes.",
     "sample_btn": "El libro de ejemplo (PDF, 12 páginas)",

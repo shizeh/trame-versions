@@ -29,9 +29,9 @@ INSTAGRAM = "https://www.instagram.com/baptisteshizeh/"
 GITHUB = "https://github.com/shizeh"
 
 LANGS = {
-    "fr": {"home": "/", "news": "/nouveautes/", "badge": "fr-fr", "pdf": "/exemple/le-gardien-du-col.pdf", "img": "/img/"},
-    "en": {"home": "/en/", "news": "/en/whats-new/", "badge": "en-us", "pdf": "/exemple/the-keeper-of-the-pass.pdf", "img": "/img/en/"},
-    "es": {"home": "/es/", "news": "/es/novedades/", "badge": "es-es", "pdf": "/exemple/el-guardian-del-paso.pdf", "img": "/img/es/"},
+    "fr": {"home": "/", "news": "/nouveautes/", "badge": "fr-fr", "pdf": "/exemple/mira.pdf", "img": "/img/"},
+    "en": {"home": "/en/", "news": "/en/whats-new/", "badge": "en-us", "pdf": "/exemple/mira-en.pdf", "img": "/img/en/"},
+    "es": {"home": "/es/", "news": "/es/novedades/", "badge": "es-es", "pdf": "/exemple/mira-es.pdf", "img": "/img/es/"},
 }
 
 T = json.loads((SRC / "texts.json").read_text(encoding="utf-8"))
