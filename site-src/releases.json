@@ -1,5 +1,35 @@
 [
  {
+  "version": "2.8.0",
+  "fr": {
+   "title": "Trame connaît vos personnages",
+   "items": [
+    "Écrire : les noms de vos fiches (personnages, lieux) sont soulignés en pointillés dans le texte. Un clic, et la fiche s’ouvre dans le carnet.",
+    "Deux personnages portent le même prénom ? Trame vous demande lequel, et retient votre choix pour le chapitre. Une fiche peut aussi avoir d’autres noms : « Mme Duval », « la mère »…",
+    "Relire → Noms : Trame repère un nom écrit de deux façons (Élise, Elise), une faute de frappe dans un prénom, ou une fiche jamais citée.",
+    "Bibliothèque : un journal se commence en un clic. Et un nouveau livre d’exemple, « Mira, le chat noir »."
+   ]
+  },
+  "en": {
+   "title": "Trame knows your characters",
+   "items": [
+    "Write: names from your cards (characters, places) get a dotted underline in the text. One click opens the card in the notebook.",
+    "Two characters share a first name? Trame asks you which one and remembers your choice for the chapter. A card can also have other names: “Mrs Duval”, “the mother”…",
+    "Read → Names: Trame spots a name spelled two ways (Élise, Elise), a typo in a name, or a card never mentioned.",
+    "Library: start a diary in one click. And a new sample book, “Mira, the black cat”."
+   ]
+  },
+  "es": {
+   "title": "Trame conoce a tus personajes",
+   "items": [
+    "Escribir: los nombres de tus fichas (personajes, lugares) se subrayan con puntos en el texto. Un clic y la ficha se abre en el cuaderno.",
+    "¿Dos personajes con el mismo nombre? Trame te pregunta cuál y recuerda tu elección para el capítulo. Una ficha también puede tener otros nombres: «la señora Duval», «la madre»…",
+    "Releer → Nombres: Trame detecta un nombre escrito de dos formas (Élise, Elise), una errata en un nombre o una ficha nunca citada.",
+    "Biblioteca: empieza un diario con un clic. Y un nuevo libro de ejemplo, «Mira, el gato negro»."
+   ]
+  }
+ },
+ {
   "version": "2.7.0",
   "fr": {
    "title": "De l’idée au livre publié",
