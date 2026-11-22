@@ -1,5 +1,35 @@
 [
  {
+  "version": "2.7.0",
+  "fr": {
+   "title": "De l’idée au livre publié",
+   "items": [
+    "Relire : corrigez un paragraphe sur place, d’un double-clic, sans repasser par Écrire. La typographie se fait toute seule et Ctrl+Z annule.",
+    "Exporter : un kit de publication pour Amazon KDP et BoD. Votre fiche prête à copier (format, pages, dos, couverture…), le résumé, les mots-clés et la liste des étapes à cocher.",
+    "Journal : un calendrier de vos entrées, « Entrée du jour » en un clic, et « Mon année en livre » pour mettre en page une année entière.",
+    "Écrire : votre avancée toujours visible (objectif de mots, jours d’affilée), et un petit bravo quand l’objectif du jour est atteint."
+   ]
+  },
+  "en": {
+   "title": "From idea to published book",
+   "items": [
+    "Read: fix a paragraph in place with a double-click, without going back to Write. Typography is automatic and Ctrl+Z undoes.",
+    "Export: a publishing kit for Amazon KDP and BoD. Your details ready to copy (trim size, pages, spine, cover…), the description, keywords and a checklist of steps.",
+    "Diary: a calendar of your entries, “Today’s entry” in one click, and “My year as a book” to lay out a whole year.",
+    "Write: your progress always in view (word goal, days in a row), and a little cheer when you reach the daily goal."
+   ]
+  },
+  "es": {
+   "title": "De la idea al libro publicado",
+   "items": [
+    "Releer: corrige un párrafo en el sitio con un doble clic, sin volver a Escribir. La tipografía es automática y Ctrl+Z deshace.",
+    "Exportar: un kit de publicación para Amazon KDP y BoD. Tu ficha lista para copiar (formato, páginas, lomo, cubierta…), el resumen, las palabras clave y la lista de pasos.",
+    "Diario: un calendario de tus entradas, «Entrada de hoy» en un clic y «Mi año en un libro» para maquetar un año entero.",
+    "Escribir: tu avance siempre a la vista (objetivo de palabras, días seguidos) y un pequeño aplauso al alcanzar el objetivo del día."
+   ]
+  }
+ },
+ {
   "version": "2.6.0",
   "fr": {
    "title": "Un statut Discord à votre goût",
