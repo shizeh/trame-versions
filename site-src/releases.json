@@ -1,5 +1,38 @@
 [
  {
+  "version": "2.9.0",
+  "fr": {
+   "title": "Trame parle neuf langues",
+   "items": [
+    "L’application et vos livres en allemand, portugais (Brésil), italien, néerlandais, polonais et suédois : guillemets et tirets de chaque langue, mots imprimés, dates du journal, et correcteur pour le néerlandais, le polonais et le portugais.",
+    "Bêta-lecture (Relire) : envoyez un fichier Word à vos lecteurs, et leurs commentaires reviennent au bon endroit dans votre texte, une couleur par lecteur.",
+    "Séries : le nom de la saga et le numéro du tome au-dessus du titre, la page « Du même auteur » remplie pour vous, et les fiches des personnages reprises d’un tome à l’autre.",
+    "Le Tiroir (dans le carnet) garde les passages que vous supprimez, pour les remettre plus tard. Et la vue Rythme du plan montre la longueur et la part de dialogue de chaque chapitre.",
+    "Couverture : des modèles par genre (polar, romance, fantasy, jeunesse…) pour démarrer en un clic."
+   ]
+  },
+  "en": {
+   "title": "Trame speaks nine languages",
+   "items": [
+    "The app and your books in German, Portuguese (Brazil), Italian, Dutch, Polish and Swedish: each language's quotation marks and dashes, printed words, diary dates, and spell-checking for Dutch, Polish and Portuguese.",
+    "Beta readers (Read): send a Word file to your readers, and their comments come back to the right place in your text, one colour per reader.",
+    "Series: the series name and book number above the title, the “Also by” page filled in for you, and character cards carried from one book to the next.",
+    "The Drawer (in the notebook) keeps the passages you delete, so you can put them back later. And the outline's Pacing view shows each chapter's length and share of dialogue.",
+    "Cover: templates by genre (crime, romance, fantasy, children's…) to get started in one click."
+   ]
+  },
+  "es": {
+   "title": "Trame habla nueve idiomas",
+   "items": [
+    "La aplicación y sus libros en alemán, portugués (Brasil), italiano, neerlandés, polaco y sueco: comillas y rayas de cada idioma, palabras impresas, fechas del diario y corrector para el neerlandés, el polaco y el portugués.",
+    "Lectura beta (Relectura): envíe un archivo de Word a sus lectores, y sus comentarios vuelven al lugar correcto de su texto, un color por lector.",
+    "Series: el nombre de la saga y el número del tomo encima del título, la página «Del mismo autor» rellenada por usted, y las fichas de los personajes de un tomo a otro.",
+    "El Cajón (en la libreta) guarda los pasajes que borra, para volver a ponerlos más tarde. Y la vista Ritmo del esquema muestra la longitud y la parte de diálogo de cada capítulo.",
+    "Cubierta: modelos por género (novela negra, romántica, fantasía, infantil…) para empezar en un clic."
+   ]
+  }
+ },
+ {
   "version": "2.8.0",
   "fr": {
    "title": "Trame connaît vos personnages",

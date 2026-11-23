@@ -32,7 +32,7 @@
         "text": "Le texte passe tout seul à la page suivante, au format de l’impression. Vous savez à chaque instant combien de pages fait votre chapitre.",
         "items": [
           "Typographie automatique pendant la frappe : tirets de dialogue, guillemets « », espaces insécables.",
-          "Correcteur d’orthographe hors ligne, en français, anglais et espagnol.",
+          "Correcteur d’orthographe hors ligne, en français, anglais, espagnol, néerlandais, polonais et portugais.",
           "Plan du livre en cartes, commentaires, notes de bas de page, images.",
           "Import de votre manuscrit Word, texte ou Markdown."
         ]
@@ -184,7 +184,7 @@
       ],
       [
         "C’est tout",
-        "Trame se met ensuite à jour toute seule. Elle est en français, en anglais et en espagnol."
+        "Trame se met ensuite à jour toute seule. Elle parle neuf langues : français, anglais, espagnol, allemand, portugais, italien, néerlandais, polonais et suédois."
       ]
     ],
     "store_alt": "<strong>Vous préférez le Microsoft Store&#8239;?</strong> Trame y est aussi, sans message d’avertissement à l’installation. Le Store reçoit les grandes versions&#8239;; le téléchargement direct reçoit toutes les nouveautés dès leur sortie.",
@@ -238,7 +238,7 @@
         "text": "Text flows to the next page on its own, in the printed trim size. You always know how many pages your chapter runs to.",
         "items": [
           "Automatic typography as you type: curly quotes, dashes, proper spacing.",
-          "Offline spell-checker in English, French and Spanish.",
+          "Offline spell-checker in English, French, Spanish, Dutch, Polish and Portuguese.",
           "Book outline as cards, comments, footnotes, images.",
           "Import your Word, text or Markdown manuscript."
         ]
@@ -390,7 +390,7 @@
       ],
       [
         "That’s it",
-        "Trame then updates itself. It’s available in English, French and Spanish."
+        "Trame then updates itself. It speaks nine languages: English, French, Spanish, German, Portuguese, Italian, Dutch, Polish and Swedish."
       ]
     ],
     "store_alt": "<strong>Prefer the Microsoft Store?</strong> Trame is there too, with no warning at install. The Store gets the major versions; the direct download gets every new feature as soon as it’s out.",
@@ -444,7 +444,7 @@
         "text": "El texto pasa solo a la página siguiente, con el formato de la impresión. Sabes en todo momento cuántas páginas tiene tu capítulo.",
         "items": [
           "Tipografía automática mientras escribes: raya de diálogo, comillas «», espacios correctos.",
-          "Corrector ortográfico sin conexión, en español, inglés y francés.",
+          "Corrector ortográfico sin conexión, en español, inglés, francés, neerlandés, polaco y portugués.",
           "Esquema del libro en tarjetas, comentarios, notas al pie, imágenes.",
           "Importación de tu manuscrito Word, texto o Markdown."
         ]
@@ -596,7 +596,7 @@
       ],
       [
         "Eso es todo",
-        "Después, Trame se actualiza sola. Está en español, inglés y francés."
+        "Después, Trame se actualiza sola. Habla nueve idiomas: español, inglés, francés, alemán, portugués, italiano, neerlandés, polaco y sueco."
       ]
     ],
     "store_alt": "<strong>¿Prefieres Microsoft Store?</strong> Trame también está allí, sin avisos al instalar. La Store recibe las versiones principales; la descarga directa recibe todas las novedades en cuanto salen.",

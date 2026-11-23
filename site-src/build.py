@@ -76,7 +76,7 @@ def jsonld(lang):
         "applicationCategory": "DesignApplication",
         "applicationSubCategory": t["seo_category"],
         "operatingSystem": "Windows 10, Windows 11",
-        "inLanguage": ["fr", "en", "es"],
+        "inLanguage": ["fr", "en", "es", "de", "pt", "it", "nl", "pl", "sv"],
         "isAccessibleForFree": True,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
         "downloadUrl": DL,
