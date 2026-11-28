@@ -30,9 +30,9 @@ INSTAGRAM = "https://www.instagram.com/baptisteshizeh/"
 GITHUB = "https://github.com/shizeh"
 
 LANGS = {
-    "fr": {"home": "/", "mac": "/mac/", "news": "/nouveautes/", "badge": "fr-fr", "pdf": "/exemple/mira.pdf", "img": "/img/"},
-    "en": {"home": "/en/", "mac": "/en/mac/", "news": "/en/whats-new/", "badge": "en-us", "pdf": "/exemple/mira-en.pdf", "img": "/img/en/"},
-    "es": {"home": "/es/", "mac": "/es/mac/", "news": "/es/novedades/", "badge": "es-es", "pdf": "/exemple/mira-es.pdf", "img": "/img/es/"},
+    "fr": {"home": "/", "windows": "/windows/", "mac": "/mac/", "news": "/nouveautes/", "badge": "fr-fr", "pdf": "/exemple/mira.pdf", "img": "/img/"},
+    "en": {"home": "/en/", "windows": "/en/windows/", "mac": "/en/mac/", "news": "/en/whats-new/", "badge": "en-us", "pdf": "/exemple/mira-en.pdf", "img": "/img/en/"},
+    "es": {"home": "/es/", "windows": "/es/windows/", "mac": "/es/mac/", "news": "/es/novedades/", "badge": "es-es", "pdf": "/exemple/mira-es.pdf", "img": "/img/es/"},
 }
 
 T = json.loads((SRC / "texts.json").read_text(encoding="utf-8"))
@@ -160,7 +160,7 @@ def topbar(lang, page, t, on_home):
     <a href="{anchor}#faq">{t['nav_faq']}</a>
     <a href="{L['news']}">{t['nav_news']}</a>
     <span class="langs" role="group" aria-label="{attr(t['lang_label'])}">{switch}</span>
-    <a class="top-cta" href="{DL}" data-download>{t['nav_download']}</a>
+    <a class="top-cta" href="{anchor}#installer">{t['nav_download']}</a>
   </nav>
 </header>
 """
@@ -241,10 +241,10 @@ def home(lang):
     <h1>{t['h1']}</h1>
     <p class="lede">{t['lede']}</p>
     <div class="hero-actions">
-      <a class="btn" href="{DL}" data-download>{DOWNLOAD_ICON} {t['download_windows']}</a>
-      <a class="btn btn-light" href="{DL_MAC}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
+      <a class="btn" href="{L['windows']}" data-win>{DOWNLOAD_ICON} {t['download_windows']}</a>
+      <a class="btn btn-light" href="{L['mac']}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
       {store_badge(lang, STORE_GET, t['store_get'])}
-      <p class="hero-meta">{t['hero_meta']} <span data-version>{t['windows']}</span> <a href="{L['mac']}">{t['mac_link']}</a></p>
+      <p class="hero-meta">{t['hero_meta']} <span data-version>{t['windows']}</span></p>
     </div>
   </div>
   <figure class="hero-video">
@@ -298,12 +298,19 @@ def home(lang):
 
 <section class="installer" id="installer" aria-labelledby="installer-h">
   <h2 id="installer-h">{t['install_h']}</h2>
-  <ol class="steps">{steps}</ol>
-  <div class="store-alt">
-    <p>{t['store_alt']}</p>
-    {store_badge(lang, STORE_PAGE, t['store_see'], lazy=True)}
+  <p class="installer-p">{t['install_p']}</p>
+  <div class="platforms">
+    <div class="platform" data-win-card>
+      <h3>Windows</h3>
+      <p>{t['win_card']}</p>
+      <a class="btn" href="{L['windows']}">{DOWNLOAD_ICON} {t['download_windows']}</a>
+    </div>
+    <div class="platform" data-mac-card>
+      <h3>Mac</h3>
+      <p>{t['mac_card']}</p>
+      <a class="btn" href="{L['mac']}">{DOWNLOAD_ICON} {t['download_mac']}</a>
+    </div>
   </div>
-  <p class="installer-note">{t['install_note']}</p>
 </section>
 
 </main>
@@ -334,13 +341,42 @@ def news(lang):
 <section class="news-list">{''.join(items)}
 </section>
 <section class="news-cta">
-  <a class="btn" href="{DL}" data-download>{DOWNLOAD_ICON} {t['download_windows']}</a>
-  <a class="btn btn-light" href="{DL_MAC}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
-  {store_badge(lang, STORE_GET, t['store_get'])}
+  <a class="btn" href="{LANGS[lang]['windows']}" data-win>{DOWNLOAD_ICON} {t['download_windows']}</a>
+  <a class="btn btn-light" href="{LANGS[lang]['mac']}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
 </section>
 </main>
 """
     return head(lang, "news", t["news_title"], t["news_p"]) + topbar(lang, "news", t, False) + body + footer(lang, t)
+
+
+def windows(lang):
+    t = T[lang]
+    steps = "".join(
+        f"""
+  <li class="release mac-step">
+    <h2>{h}</h2>
+    <p>{p}</p>
+  </li>"""
+        for h, p in t["win_steps"]
+    )
+    body = f"""
+<main class="news mac-guide">
+<section class="news-head">
+  <h1>{t['win_h']}</h1>
+  <p class="lede">{t['win_p']}</p>
+  <p class="news-all"><a class="btn" href="{DL}" data-download>{DOWNLOAD_ICON} {t['download_windows']}</a></p>
+</section>
+<section>
+<ol class="news-list mac-steps">{steps}
+</ol>
+</section>
+<section class="news-list">
+  <div class="release store-box"><p>{t['store_alt']}</p>{store_badge(lang, STORE_GET, t['store_get'], lazy=True)}</div>
+  <div class="release"><h2>{t['mac_why_h']}</h2><p>{t['win_why']}</p></div>
+</section>
+</main>
+"""
+    return head(lang, "windows", t["win_title"], t["win_p"]) + topbar(lang, "windows", t, False) + body + footer(lang, t)
 
 
 def mac(lang):
@@ -375,7 +411,7 @@ def mac(lang):
 
 def sitemap():
     rows = []
-    for page in ("home", "news", "mac"):
+    for page in ("home", "news", "windows", "mac"):
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{URL}{LANGS[l][page]}"/>' for l in LANGS)
         alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{URL}{LANGS["fr"][page]}"/>'
         for l in LANGS:
@@ -390,7 +426,7 @@ def sitemap():
 print("→ site/sitemap.xml, site/robots.txt")
 
 for lang, L in LANGS.items():
-    for page, fn in (("home", home), ("news", news), ("mac", mac)):
+    for page, fn in (("home", home), ("news", news), ("windows", windows), ("mac", mac)):
         out = SITE / L[page].strip("/") / "index.html" if L[page] != "/" else SITE / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(fn(lang), encoding="utf-8")

@@ -1,7 +1,7 @@
 {
     "fr": {
         "title": "Trame, l’app gratuite pour écrire et mettre en page votre livre",
-        "description": "Trame, logiciel d’écriture gratuit pour Windows : écrivez votre roman sur de vraies pages, obtenez le PDF pour l’imprimeur (KDP, BoD), la couverture et l’EPUB.",
+        "description": "Trame, logiciel d’écriture gratuit pour Windows et Mac : écrivez votre roman sur de vraies pages, obtenez le PDF pour l’imprimeur (KDP, BoD), la couverture et l’EPUB.",
         "brand_label": "Trame, accueil",
         "nav_label": "Navigation",
         "nav_discover": "Découvrir",
@@ -15,7 +15,7 @@
         "store_get": "Obtenir Trame sur le Microsoft Store",
         "store_see": "Voir Trame sur le Microsoft Store",
         "hero_meta": "Gratuit, sans compte.",
-        "windows": "Windows 10 et 11.",
+        "windows": "Windows 10 et 11, et Mac.",
         "version_text": "Version {v}, pour Windows 10 et 11.",
         "size_text": "(version {v}, {mo} Mo)",
         "video_label": "Présentation de Trame en 15 secondes : on écrit, Trame met le livre en page et prépare sa couverture.",
@@ -187,7 +187,7 @@
                 "Trame se met ensuite à jour toute seule. Elle parle neuf langues : français, anglais, espagnol, allemand, portugais, italien, néerlandais, polonais et suédois."
             ]
         ],
-        "store_alt": "<strong>Vous préférez le Microsoft Store&#8239;?</strong> Trame y est aussi, sans message d’avertissement à l’installation. Le Store reçoit les grandes versions&#8239;; le téléchargement direct reçoit toutes les nouveautés dès leur sortie.",
+        "store_alt": "<strong>Sur Windows, vous préférez le Microsoft Store&#8239;?</strong> Trame y est aussi, sans message d’avertissement à l’installation. Le Store reçoit les grandes versions&#8239;; le téléchargement direct reçoit toutes les nouveautés dès leur sortie.",
         "install_note": "Trame est pour l’instant disponible sur Windows 10 et 11 uniquement.",
         "foot_by": "Trame est créée par <a href=\"https://shizeh.com\" rel=\"author\">Baptiste Shizeh</a>.",
         "foot_label": "Liens utiles",
@@ -235,11 +235,33 @@
         "mac_why": "Apple affiche ce message pour les applications qui ne sont pas enregistrées auprès d’elle, un service payant. Trame est gratuite et indépendante&#8239;: elle ne contient rien de dangereux et ne collecte aucune donnée. Vos livres restent sur votre Mac.",
         "mac_tip_h": "Vous avez ouvert Trame sans le ranger&#8239;?",
         "mac_tip": "Pas de souci&#8239;: Trame vous propose «&#8239;Installer dans Applications&#8239;». Acceptez, il s’y range tout seul et se relance.",
-        "mac_img_alt": "La fenêtre de Trame.dmg : l’icône Trame, une flèche, et le dossier Applications."
+        "mac_img_alt": "La fenêtre de Trame.dmg : l’icône Trame, une flèche, et le dossier Applications.",
+        "win_title": "Installer Trame sur Windows — Trame",
+        "win_h": "Installer Trame sur Windows",
+        "win_p": "Deux minutes, une seule fois. Ensuite, Trame se met à jour tout seul.",
+        "win_link": "Le guide d’installation sur Windows",
+        "win_steps": [
+            [
+                "Téléchargez Trame",
+                "Cliquez sur «&#8239;Télécharger pour Windows&#8239;» <span class=\"muted\" data-size></span>. Le fichier arrive dans votre dossier Téléchargements. Trame fonctionne sur Windows 10 et 11."
+            ],
+            [
+                "Ouvrez-le",
+                "Double-cliquez sur le fichier téléchargé. Si Windows affiche «&#8239;Windows a protégé votre ordinateur&#8239;», cliquez sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>."
+            ],
+            [
+                "C’est prêt",
+                "Trame s’installe et s’ouvre. Les nouvelles versions s’installent ensuite en un clic."
+            ]
+        ],
+        "win_why": "Windows affiche ce message pour les applications de petits éditeurs indépendants qui ne paient pas de certificat. Trame est gratuite et sans danger&#8239;: elle ne collecte aucune donnée, et vos livres restent sur votre ordinateur.",
+        "install_p": "Gratuit, sans compte. Choisissez votre ordinateur&#8239;: chaque page explique l’installation pas à pas.",
+        "win_card": "Windows 10 et 11",
+        "mac_card": "macOS 11 ou plus récent, Apple Silicon et Intel"
     },
     "en": {
         "title": "Trame, the free app to write and format your book",
-        "description": "Trame is free book writing software for Windows: write your novel on real pages, then get a print-ready PDF (KDP, BoD), the cover and an EPUB ebook.",
+        "description": "Trame is free book writing software for Windows and Mac: write your novel on real pages, then get a print-ready PDF (KDP, BoD), the cover and an EPUB ebook.",
         "brand_label": "Trame, home",
         "nav_label": "Navigation",
         "nav_discover": "Discover",
@@ -253,7 +275,7 @@
         "store_get": "Get Trame from the Microsoft Store",
         "store_see": "See Trame on the Microsoft Store",
         "hero_meta": "Free, no account.",
-        "windows": "Windows 10 and 11.",
+        "windows": "Windows 10 and 11, and Mac.",
         "version_text": "Version {v}, for Windows 10 and 11.",
         "size_text": "(version {v}, {mo} MB)",
         "video_label": "Trame in 15 seconds: you write, Trame lays out the book and prepares its cover.",
@@ -425,7 +447,7 @@
                 "Trame then updates itself. It speaks nine languages: English, French, Spanish, German, Portuguese, Italian, Dutch, Polish and Swedish."
             ]
         ],
-        "store_alt": "<strong>Prefer the Microsoft Store?</strong> Trame is there too, with no warning at install. The Store gets the major versions; the direct download gets every new feature as soon as it’s out.",
+        "store_alt": "<strong>On Windows, prefer the Microsoft Store?</strong> Trame is there too, with no warning at install. The Store gets the major versions; the direct download gets every new feature as soon as it’s out.",
         "install_note": "Trame is currently available on Windows 10 and 11 only.",
         "foot_by": "Trame is made by <a href=\"https://shizeh.com\" rel=\"author\">Baptiste Shizeh</a>.",
         "foot_label": "Useful links",
@@ -473,11 +495,33 @@
         "mac_why": "Apple shows this message for apps that aren’t registered with it, a paid service. Trame is free and independent: it contains nothing harmful and collects no data. Your books stay on your Mac.",
         "mac_tip_h": "Opened Trame without moving it?",
         "mac_tip": "No problem: Trame offers to “Install in Applications”. Accept, and it moves itself there and restarts.",
-        "mac_img_alt": "The Trame.dmg window: the Trame icon, an arrow, and the Applications folder."
+        "mac_img_alt": "The Trame.dmg window: the Trame icon, an arrow, and the Applications folder.",
+        "win_title": "Install Trame on Windows — Trame",
+        "win_h": "Install Trame on Windows",
+        "win_p": "Two minutes, just once. After that, Trame updates itself.",
+        "win_link": "Windows installation guide",
+        "win_steps": [
+            [
+                "Download Trame",
+                "Click “Download for Windows” <span class=\"muted\" data-size></span>. The file lands in your Downloads folder. Trame runs on Windows 10 and 11."
+            ],
+            [
+                "Open it",
+                "Double-click the downloaded file. If Windows says “Windows protected your PC”, click <strong>More info</strong>, then <strong>Run anyway</strong>."
+            ],
+            [
+                "You’re all set",
+                "Trame installs and opens. New versions then install in one click."
+            ]
+        ],
+        "win_why": "Windows shows this message for apps from small independent publishers who don’t pay for a certificate. Trame is free and safe: it collects no data, and your books stay on your computer.",
+        "install_p": "Free, no account. Pick your computer: each page walks you through the install.",
+        "win_card": "Windows 10 and 11",
+        "mac_card": "macOS 11 or later, Apple Silicon and Intel"
     },
     "es": {
         "title": "Trame, la app gratuita para escribir y maquetar tu libro",
-        "description": "Trame, programa gratuito para escribir libros en Windows: escribe tu novela en páginas reales y obtén el PDF para la imprenta (KDP, BoD), la portada y el EPUB.",
+        "description": "Trame, programa gratuito para escribir libros en Windows y Mac: escribe tu novela en páginas reales y obtén el PDF para la imprenta (KDP, BoD), la portada y el EPUB.",
         "brand_label": "Trame, inicio",
         "nav_label": "Navegación",
         "nav_discover": "Descubrir",
@@ -491,7 +535,7 @@
         "store_get": "Obtener Trame en Microsoft Store",
         "store_see": "Ver Trame en Microsoft Store",
         "hero_meta": "Gratis, sin cuenta.",
-        "windows": "Windows 10 y 11.",
+        "windows": "Windows 10 y 11, y Mac.",
         "version_text": "Versión {v}, para Windows 10 y 11.",
         "size_text": "(versión {v}, {mo} MB)",
         "video_label": "Trame en 15 segundos: tú escribes, Trame maqueta el libro y prepara su cubierta.",
@@ -663,7 +707,7 @@
                 "Después, Trame se actualiza sola. Habla nueve idiomas: español, inglés, francés, alemán, portugués, italiano, neerlandés, polaco y sueco."
             ]
         ],
-        "store_alt": "<strong>¿Prefieres Microsoft Store?</strong> Trame también está allí, sin avisos al instalar. La Store recibe las versiones principales; la descarga directa recibe todas las novedades en cuanto salen.",
+        "store_alt": "<strong>En Windows, ¿prefieres Microsoft Store?</strong> Trame también está allí, sin avisos al instalar. La Store recibe las versiones principales; la descarga directa recibe todas las novedades en cuanto salen.",
         "install_note": "Por ahora, Trame solo está disponible para Windows 10 y 11.",
         "foot_by": "Trame es obra de <a href=\"https://shizeh.com\" rel=\"author\">Baptiste Shizeh</a>.",
         "foot_label": "Enlaces útiles",
@@ -711,6 +755,28 @@
         "mac_why": "Apple muestra este mensaje para las aplicaciones que no están registradas con ella, un servicio de pago. Trame es gratuita e independiente: no contiene nada peligroso y no recopila ningún dato. Sus libros se quedan en su Mac.",
         "mac_tip_h": "¿Abrió Trame sin moverlo?",
         "mac_tip": "No pasa nada: Trame le propone «Instalar en Aplicaciones». Acepte, y se mueve solo y se vuelve a abrir.",
-        "mac_img_alt": "La ventana de Trame.dmg: el icono de Trame, una flecha y la carpeta Aplicaciones."
+        "mac_img_alt": "La ventana de Trame.dmg: el icono de Trame, una flecha y la carpeta Aplicaciones.",
+        "win_title": "Instalar Trame en Windows — Trame",
+        "win_h": "Instalar Trame en Windows",
+        "win_p": "Dos minutos, una sola vez. Después, Trame se actualiza solo.",
+        "win_link": "Guía de instalación en Windows",
+        "win_steps": [
+            [
+                "Descargue Trame",
+                "Haga clic en «Descargar para Windows» <span class=\"muted\" data-size></span>. El archivo llega a su carpeta Descargas. Trame funciona en Windows 10 y 11."
+            ],
+            [
+                "Ábralo",
+                "Haga doble clic en el archivo descargado. Si Windows muestra «Windows protegió su PC», haga clic en <strong>Más información</strong> y luego en <strong>Ejecutar de todas formas</strong>."
+            ],
+            [
+                "Listo",
+                "Trame se instala y se abre. Las nuevas versiones se instalan luego con un clic."
+            ]
+        ],
+        "win_why": "Windows muestra este mensaje para las aplicaciones de pequeños editores independientes que no pagan un certificado. Trame es gratuita y segura: no recopila ningún dato y sus libros se quedan en su ordenador.",
+        "install_p": "Gratis, sin cuenta. Elija su ordenador: cada página explica la instalación paso a paso.",
+        "win_card": "Windows 10 y 11",
+        "mac_card": "macOS 11 o posterior, Apple Silicon e Intel"
     }
 }

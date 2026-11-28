@@ -48,8 +48,12 @@
   const onMac = /Macintosh|Mac OS X/.test(navigator.userAgent) && !("ontouchend" in document);
   if (onMac) {
     document.querySelectorAll("a.store").forEach((a) => (a.hidden = true)); // Microsoft Store : Windows seulement
+    // Section « Installer » : la carte Mac en premier.
+    const mc = document.querySelector("[data-mac-card]");
+    const wc = document.querySelector("[data-win-card]");
+    if (mc && wc) wc.before(mc);
     document.querySelectorAll("[data-mac]").forEach((mac) => {
-      const win = mac.parentElement.querySelector("[data-download]");
+      const win = mac.parentElement.querySelector("[data-win]");
       if (!win) return;
       mac.classList.remove("btn-light");
       win.classList.add("btn-light");
