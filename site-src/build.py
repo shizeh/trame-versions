@@ -30,9 +30,9 @@ INSTAGRAM = "https://www.instagram.com/baptisteshizeh/"
 GITHUB = "https://github.com/shizeh"
 
 LANGS = {
-    "fr": {"home": "/", "news": "/nouveautes/", "badge": "fr-fr", "pdf": "/exemple/mira.pdf", "img": "/img/"},
-    "en": {"home": "/en/", "news": "/en/whats-new/", "badge": "en-us", "pdf": "/exemple/mira-en.pdf", "img": "/img/en/"},
-    "es": {"home": "/es/", "news": "/es/novedades/", "badge": "es-es", "pdf": "/exemple/mira-es.pdf", "img": "/img/es/"},
+    "fr": {"home": "/", "mac": "/mac/", "news": "/nouveautes/", "badge": "fr-fr", "pdf": "/exemple/mira.pdf", "img": "/img/"},
+    "en": {"home": "/en/", "mac": "/en/mac/", "news": "/en/whats-new/", "badge": "en-us", "pdf": "/exemple/mira-en.pdf", "img": "/img/en/"},
+    "es": {"home": "/es/", "mac": "/es/mac/", "news": "/es/novedades/", "badge": "es-es", "pdf": "/exemple/mira-es.pdf", "img": "/img/es/"},
 }
 
 T = json.loads((SRC / "texts.json").read_text(encoding="utf-8"))
@@ -232,7 +232,7 @@ def home(lang):
     faq = "".join(f'<details><summary>{q}</summary><div class="faq-a">{a}</div></details>' for q, a in t["faq"])
     steps = "".join(f"<li><h3>{h}</h3><p>{p}</p></li>" for h, p in t["steps"])
     steps = steps.replace("{DL}", DL)
-    faq = faq.replace("{ISSUES}", ISSUES).replace("{INSTAGRAM}", INSTAGRAM).replace("{STORE}", STORE_PAGE)
+    faq = faq.replace("{MAC}", L["mac"]).replace("{ISSUES}", ISSUES).replace("{INSTAGRAM}", INSTAGRAM).replace("{STORE}", STORE_PAGE)
     body = f"""
 <main>
 
@@ -244,7 +244,7 @@ def home(lang):
       <a class="btn" href="{DL}" data-download>{DOWNLOAD_ICON} {t['download_windows']}</a>
       <a class="btn btn-light" href="{DL_MAC}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
       {store_badge(lang, STORE_GET, t['store_get'])}
-      <p class="hero-meta">{t['hero_meta']} <span data-version>{t['windows']}</span></p>
+      <p class="hero-meta">{t['hero_meta']} <span data-version>{t['windows']}</span> <a href="{L['mac']}">{t['mac_link']}</a></p>
     </div>
   </div>
   <figure class="hero-video">
@@ -343,9 +343,39 @@ def news(lang):
     return head(lang, "news", t["news_title"], t["news_p"]) + topbar(lang, "news", t, False) + body + footer(lang, t)
 
 
+def mac(lang):
+    t = T[lang]
+    steps = "".join(
+        f"""
+  <li class="release mac-step">
+    <h2>{h}</h2>
+    <p>{p}</p>{f'<img src="/img/mac-dmg.webp" width="720" height="460" alt="{attr(t["mac_img_alt"])}" loading="lazy">' if i == 1 else ''}
+  </li>"""
+        for i, (h, p) in enumerate(t["mac_steps"])
+    )
+    body = f"""
+<main class="news mac-guide">
+<section class="news-head">
+  <h1>{t['mac_h']}</h1>
+  <p class="lede">{t['mac_p']}</p>
+  <p class="news-all"><a class="btn" href="{DL_MAC}">{DOWNLOAD_ICON} {t['download_mac']}</a></p>
+</section>
+<section>
+<ol class="news-list mac-steps">{steps}
+</ol>
+</section>
+<section class="news-list">
+  <div class="release"><h2>{t['mac_tip_h']}</h2><p>{t['mac_tip']}</p></div>
+  <div class="release"><h2>{t['mac_why_h']}</h2><p>{t['mac_why']}</p></div>
+</section>
+</main>
+"""
+    return head(lang, "mac", t["mac_title"], t["mac_p"]) + topbar(lang, "mac", t, False) + body + footer(lang, t)
+
+
 def sitemap():
     rows = []
-    for page in ("home", "news"):
+    for page in ("home", "news", "mac"):
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{URL}{LANGS[l][page]}"/>' for l in LANGS)
         alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{URL}{LANGS["fr"][page]}"/>'
         for l in LANGS:
@@ -360,7 +390,7 @@ def sitemap():
 print("→ site/sitemap.xml, site/robots.txt")
 
 for lang, L in LANGS.items():
-    for page, fn in (("home", home), ("news", news)):
+    for page, fn in (("home", home), ("news", news), ("mac", mac)):
         out = SITE / L[page].strip("/") / "index.html" if L[page] != "/" else SITE / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(fn(lang), encoding="utf-8")

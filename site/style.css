@@ -366,3 +366,11 @@ main.news > section + section { margin-top: clamp(40px, 6vw, 64px); }
 .author { text-align: center; }
 .author h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; text-wrap: balance; }
 .author p { max-width: 38em; margin: 18px auto 26px; color: var(--muted); text-wrap: pretty; }
+
+/* Guide d'installation sur Mac */
+.mac-steps { counter-reset: step; list-style: none; padding: 0; }
+.mac-step { counter-increment: step; }
+.mac-step h2::before { content: counter(step) ". "; color: var(--prune); }
+.mac-step p, .mac-guide .release p { margin-top: 10px; line-height: 1.6; max-width: 68ch; }
+.mac-step img { display: block; width: 100%; max-width: 560px; height: auto; margin-top: 18px; border-radius: 14px; }
+.hero-meta a { white-space: nowrap; }

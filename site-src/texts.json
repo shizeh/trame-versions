@@ -145,7 +145,7 @@
             ],
             [
                 "Est-ce que ça marche sur Mac&#8239;?",
-                "Oui&#8239;! Trame fonctionne sur Mac (Apple Silicon et Intel, macOS 11 ou plus récent). Ouvrez le fichier .dmg et glissez Trame dans Applications. Au premier lancement, le Mac affiche une alerte&#8239;: allez dans Réglages Système &gt; Confidentialité et sécurité, puis cliquez sur «&#8239;Ouvrir quand même&#8239;». C’est à faire une seule fois. Vos fichiers .trame passent d’un ordinateur à l’autre, de Windows à Mac."
+                "Oui&#8239;! Trame fonctionne sur Mac (Apple Silicon et Intel, macOS 11 ou plus récent). Ouvrez le fichier .dmg et glissez Trame dans Applications. Au premier lancement, le Mac affiche une alerte&#8239;: allez dans Réglages Système &gt; Confidentialité et sécurité, puis cliquez sur «&#8239;Ouvrir quand même&#8239;». C’est à faire une seule fois. Vos fichiers .trame passent d’un ordinateur à l’autre, de Windows à Mac. <a href=\"{MAC}\">Le guide pas à pas</a>."
             ],
             [
                 "Puis-je publier sur Amazon KDP avec Trame&#8239;?",
@@ -204,7 +204,38 @@
         "author_h": "Créée par un auteur, pour les auteurs",
         "author_p": "Je m’appelle Baptiste Shizeh. En écrivant mon premier roman, j’ai voulu un outil simple pour aller du manuscrit au livre imprimé : c’est devenu Trame. Elle est gratuite, parce qu’écrire et publier un livre devrait être à la portée de tout le monde.",
         "author_btn": "Découvrir Baptiste Shizeh",
-        "download_mac": "Télécharger pour Mac"
+        "download_mac": "Télécharger pour Mac",
+        "mac_title": "Installer Trame sur Mac — Trame",
+        "mac_h": "Installer Trame sur Mac",
+        "mac_p": "Cinq minutes, une seule fois. Ensuite, Trame se met à jour tout seul.",
+        "mac_link": "Le guide d’installation sur Mac",
+        "mac_steps": [
+            [
+                "Téléchargez Trame",
+                "Cliquez sur «&#8239;Télécharger pour Mac&#8239;». Le fichier <strong>Trame.dmg</strong> arrive dans votre dossier Téléchargements. Trame fonctionne sur tous les Mac récents et anciens (Apple Silicon et Intel), avec macOS 11 ou plus récent."
+            ],
+            [
+                "Glissez Trame dans Applications",
+                "Ouvrez <strong>Trame.dmg</strong>. Une fenêtre s’affiche&#8239;: attrapez l’icône Trame et lâchez-la sur le dossier <strong>Applications</strong>, en suivant la flèche."
+            ],
+            [
+                "Ouvrez Trame",
+                "Ouvrez le dossier Applications et double-cliquez sur Trame (ou appuyez sur ⌘ + Espace et tapez «&#8239;Trame&#8239;»). La première fois, le Mac affiche que Trame n’a pas pu être vérifié&#8239;: cliquez sur <strong>Terminé</strong>, surtout pas sur «&#8239;Placer dans la corbeille&#8239;»."
+            ],
+            [
+                "Autorisez Trame, une seule fois",
+                "Ouvrez <strong>Réglages Système &gt; Confidentialité et sécurité</strong>, descendez jusqu’à la ligne sur Trame et cliquez sur <strong>Ouvrir quand même</strong>. Confirmez avec le mot de passe de votre Mac. Vous n’aurez plus à le faire."
+            ],
+            [
+                "C’est prêt",
+                "Pour garder Trame sous la main, faites-le glisser depuis Applications vers le Dock. Les nouvelles versions s’installent ensuite en un clic."
+            ]
+        ],
+        "mac_why_h": "Pourquoi cet avertissement&#8239;?",
+        "mac_why": "Apple affiche ce message pour les applications qui ne sont pas enregistrées auprès d’elle, un service payant. Trame est gratuite et indépendante&#8239;: elle ne contient rien de dangereux et ne collecte aucune donnée. Vos livres restent sur votre Mac.",
+        "mac_tip_h": "Vous avez ouvert Trame sans le ranger&#8239;?",
+        "mac_tip": "Pas de souci&#8239;: Trame vous propose «&#8239;Installer dans Applications&#8239;». Acceptez, il s’y range tout seul et se relance.",
+        "mac_img_alt": "La fenêtre de Trame.dmg : l’icône Trame, une flèche, et le dossier Applications."
     },
     "en": {
         "title": "Trame, the free app to write and format your book",
@@ -352,7 +383,7 @@
             ],
             [
                 "Does it work on Mac?",
-                "Yes! Trame runs on Mac (Apple Silicon and Intel, macOS 11 or later). Open the .dmg file and drag Trame into Applications. The first time you open it, your Mac shows a warning: go to System Settings &gt; Privacy &amp; Security, then click “Open Anyway”. You only do this once. Your .trame files move freely between Windows and Mac."
+                "Yes! Trame runs on Mac (Apple Silicon and Intel, macOS 11 or later). Open the .dmg file and drag Trame into Applications. The first time you open it, your Mac shows a warning: go to System Settings &gt; Privacy &amp; Security, then click “Open Anyway”. You only do this once. Your .trame files move freely between Windows and Mac. <a href=\"{MAC}\">Step-by-step guide</a>."
             ],
             [
                 "Can I publish on Amazon KDP with Trame?",
@@ -411,7 +442,38 @@
         "author_h": "Made by an author, for authors",
         "author_p": "I’m Baptiste Shizeh. While writing my first novel, I wanted a simple tool to go from manuscript to printed book: that became Trame. It’s free, because writing and publishing a book should be within everyone’s reach.",
         "author_btn": "Discover Baptiste Shizeh",
-        "download_mac": "Download for Mac"
+        "download_mac": "Download for Mac",
+        "mac_title": "Install Trame on Mac — Trame",
+        "mac_h": "Install Trame on Mac",
+        "mac_p": "Five minutes, just once. After that, Trame updates itself.",
+        "mac_link": "Mac installation guide",
+        "mac_steps": [
+            [
+                "Download Trame",
+                "Click “Download for Mac”. The <strong>Trame.dmg</strong> file lands in your Downloads folder. Trame runs on recent and older Macs (Apple Silicon and Intel) with macOS 11 or later."
+            ],
+            [
+                "Drag Trame into Applications",
+                "Open <strong>Trame.dmg</strong>. A window appears: grab the Trame icon and drop it on the <strong>Applications</strong> folder, following the arrow."
+            ],
+            [
+                "Open Trame",
+                "Open the Applications folder and double-click Trame (or press ⌘ + Space and type “Trame”). The first time, your Mac says Trame couldn’t be verified: click <strong>Done</strong>, not “Move to Bin”."
+            ],
+            [
+                "Allow Trame, just once",
+                "Open <strong>System Settings &gt; Privacy &amp; Security</strong>, scroll down to the line about Trame and click <strong>Open Anyway</strong>. Confirm with your Mac password. You won’t have to do it again."
+            ],
+            [
+                "You’re all set",
+                "To keep Trame handy, drag it from Applications to the Dock. New versions then install in one click."
+            ]
+        ],
+        "mac_why_h": "Why this warning?",
+        "mac_why": "Apple shows this message for apps that aren’t registered with it, a paid service. Trame is free and independent: it contains nothing harmful and collects no data. Your books stay on your Mac.",
+        "mac_tip_h": "Opened Trame without moving it?",
+        "mac_tip": "No problem: Trame offers to “Install in Applications”. Accept, and it moves itself there and restarts.",
+        "mac_img_alt": "The Trame.dmg window: the Trame icon, an arrow, and the Applications folder."
     },
     "es": {
         "title": "Trame, la app gratuita para escribir y maquetar tu libro",
@@ -559,7 +621,7 @@
             ],
             [
                 "¿Funciona en Mac?",
-                "¡Sí! Trame funciona en Mac (Apple Silicon e Intel, macOS 11 o posterior). Abra el archivo .dmg y arrastre Trame a Aplicaciones. La primera vez, el Mac muestra un aviso: vaya a Ajustes del Sistema &gt; Privacidad y seguridad y haga clic en «Abrir igualmente». Solo hay que hacerlo una vez. Sus archivos .trame pasan de Windows a Mac sin problema."
+                "¡Sí! Trame funciona en Mac (Apple Silicon e Intel, macOS 11 o posterior). Abra el archivo .dmg y arrastre Trame a Aplicaciones. La primera vez, el Mac muestra un aviso: vaya a Ajustes del Sistema &gt; Privacidad y seguridad y haga clic en «Abrir igualmente». Solo hay que hacerlo una vez. Sus archivos .trame pasan de Windows a Mac sin problema. <a href=\"{MAC}\">Guía paso a paso</a>."
             ],
             [
                 "¿Puedo publicar en Amazon KDP con Trame?",
@@ -618,6 +680,37 @@
         "author_h": "Creada por un autor, para autores",
         "author_p": "Me llamo Baptiste Shizeh. Mientras escribía mi primera novela, quise una herramienta sencilla para pasar del manuscrito al libro impreso: así nació Trame. Es gratuita, porque escribir y publicar un libro debería estar al alcance de todos.",
         "author_btn": "Descubrir a Baptiste Shizeh",
-        "download_mac": "Descargar para Mac"
+        "download_mac": "Descargar para Mac",
+        "mac_title": "Instalar Trame en Mac — Trame",
+        "mac_h": "Instalar Trame en Mac",
+        "mac_p": "Cinco minutos, una sola vez. Después, Trame se actualiza solo.",
+        "mac_link": "Guía de instalación en Mac",
+        "mac_steps": [
+            [
+                "Descargue Trame",
+                "Haga clic en «Descargar para Mac». El archivo <strong>Trame.dmg</strong> llega a su carpeta Descargas. Trame funciona en Mac recientes y antiguos (Apple Silicon e Intel) con macOS 11 o posterior."
+            ],
+            [
+                "Arrastre Trame a Aplicaciones",
+                "Abra <strong>Trame.dmg</strong>. Aparece una ventana: tome el icono de Trame y suéltelo sobre la carpeta <strong>Aplicaciones</strong>, siguiendo la flecha."
+            ],
+            [
+                "Abra Trame",
+                "Abra la carpeta Aplicaciones y haga doble clic en Trame (o pulse ⌘ + Espacio y escriba «Trame»). La primera vez, el Mac indica que no pudo verificar Trame: haga clic en <strong>OK</strong>, nunca en «Trasladar a la papelera»."
+            ],
+            [
+                "Autorice Trame, una sola vez",
+                "Abra <strong>Ajustes del Sistema &gt; Privacidad y seguridad</strong>, baje hasta la línea sobre Trame y haga clic en <strong>Abrir igualmente</strong>. Confirme con la contraseña de su Mac. No tendrá que volver a hacerlo."
+            ],
+            [
+                "Listo",
+                "Para tener Trame a mano, arrástrelo desde Aplicaciones al Dock. Las nuevas versiones se instalan luego con un clic."
+            ]
+        ],
+        "mac_why_h": "¿Por qué este aviso?",
+        "mac_why": "Apple muestra este mensaje para las aplicaciones que no están registradas con ella, un servicio de pago. Trame es gratuita e independiente: no contiene nada peligroso y no recopila ningún dato. Sus libros se quedan en su Mac.",
+        "mac_tip_h": "¿Abrió Trame sin moverlo?",
+        "mac_tip": "No pasa nada: Trame le propone «Instalar en Aplicaciones». Acepte, y se mueve solo y se vuelve a abrir.",
+        "mac_img_alt": "La ventana de Trame.dmg: el icono de Trame, una flecha y la carpeta Aplicaciones."
     }
 }
