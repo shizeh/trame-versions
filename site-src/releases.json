@@ -1,5 +1,62 @@
 [
  {
+  "version": "2.11.0",
+  "fr": {
+   "title": "Couverture et impression",
+   "items": [
+    "Couverture : importez la vôtre, faite dans Canva par exemple. Trame vous donne un gabarit aux mesures exactes de votre livre, puis vérifie l’image.",
+    "Cadrez l’image de la couverture : zoom, position, ou faites-la glisser directement sur l’aperçu.",
+    "Le fond perdu s’adapte à votre imprimeur (Amazon KDP, BoD…), pour un PDF accepté du premier coup.",
+    "La fenêtre s’ouvre en grand, et F11 passe en plein écran."
+   ]
+  },
+  "en": {
+   "title": "Cover and printing",
+   "items": [
+    "Cover: import your own, made in Canva for example. Trame gives you a template with your book’s exact measurements, then checks the image.",
+    "Frame the cover image: zoom, position, or drag it right on the preview.",
+    "Bleed adapts to your printer (Amazon KDP, BoD…), for a PDF accepted the first time.",
+    "The window opens full size, and F11 switches to full screen."
+   ]
+  },
+  "es": {
+   "title": "Cubierta e impresión",
+   "items": [
+    "Cubierta: importe la suya, hecha en Canva por ejemplo. Trame le da una plantilla con las medidas exactas de su libro y luego comprueba la imagen.",
+    "Encuadre la imagen de la cubierta: zoom, posición, o arrástrela directamente sobre la vista previa.",
+    "El sangrado se adapta a su imprenta (Amazon KDP, BoD…), para un PDF aceptado a la primera.",
+    "La ventana se abre en grande, y F11 pasa a pantalla completa."
+   ]
+  }
+ },
+ {
+  "version": "2.10.0",
+  "fr": {
+   "title": "Exporter, plus simple",
+   "items": [
+    "Exporter tient sur un seul écran : choisissez le type de fichier (PDF, EPUB, Word, couverture, fichier Trame), et seuls ses réglages s’affichent.",
+    "Nouveau : le fichier .trame s’enregistre depuis Exporter, pour continuer votre livre sur un autre ordinateur.",
+    "Une petite signature « Mis en page avec Trame », avec le logo en noir et blanc, sous les mentions légales. Vous pouvez la retirer dans Titre et mentions."
+   ]
+  },
+  "en": {
+   "title": "Export, made simpler",
+   "items": [
+    "Export fits on one screen: choose the file type (PDF, EPUB, Word, cover, Trame file), and only its settings are shown.",
+    "New: the .trame file can be saved from Export, to carry on with your book on another computer.",
+    "A small “Typeset with Trame” signature, with the logo in black and white, under the copyright notice. You can remove it in Title and credits."
+   ]
+  },
+  "es": {
+   "title": "Exportar, más sencillo",
+   "items": [
+    "Exportar cabe en una sola pantalla: elija el tipo de archivo (PDF, EPUB, Word, cubierta, archivo Trame) y solo aparecen sus ajustes.",
+    "Nuevo: el archivo .trame se guarda desde Exportar, para continuar su libro en otro ordenador.",
+    "Una pequeña firma «Maquetado con Trame», con el logo en blanco y negro, bajo los créditos. Puede quitarla en Título y créditos."
+   ]
+  }
+ },
+ {
   "version": "2.9.0",
   "fr": {
    "title": "Trame parle neuf langues",
