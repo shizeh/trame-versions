@@ -44,11 +44,24 @@
     video.controls = true;
   }
 
+  // Sur Mac, le bouton Mac passe en premier et en couleur.
+  const onMac = /Macintosh|Mac OS X/.test(navigator.userAgent) && !("ontouchend" in document);
+  if (onMac) {
+    document.querySelectorAll("a.store").forEach((a) => (a.hidden = true)); // Microsoft Store : Windows seulement
+    document.querySelectorAll("[data-mac]").forEach((mac) => {
+      const win = mac.parentElement.querySelector("[data-download]");
+      if (!win) return;
+      mac.classList.remove("btn-light");
+      win.classList.add("btn-light");
+      win.before(mac);
+    });
+  }
+
   // La page des versions reste le lien de secours si GitHub ne répond pas.
   const TXT = {
-    fr: { v: (v) => `Version ${v}, pour Windows 10 et 11.`, s: (v, mo) => `(version ${v}, ${mo} Mo)` },
-    en: { v: (v) => `Version ${v}, for Windows 10 and 11.`, s: (v, mo) => `(version ${v}, ${mo} MB)` },
-    es: { v: (v) => `Versión ${v}, para Windows 10 y 11.`, s: (v, mo) => `(versión ${v}, ${mo} MB)` },
+    fr: { m: (v) => `Version ${v}, pour Mac (macOS 11 ou plus) et Windows.`, v: (v) => `Version ${v}, pour Windows 10 et 11.`, s: (v, mo) => `(version ${v}, ${mo} Mo)` },
+    en: { m: (v) => `Version ${v}, for Mac (macOS 11 or later) and Windows.`, v: (v) => `Version ${v}, for Windows 10 and 11.`, s: (v, mo) => `(version ${v}, ${mo} MB)` },
+    es: { m: (v) => `Versión ${v}, para Mac (macOS 11 o posterior) y Windows.`, v: (v) => `Versión ${v}, para Windows 10 y 11.`, s: (v, mo) => `(versión ${v}, ${mo} MB)` },
   }[lang];
   fetch("https://api.github.com/repos/shizeh/trame-versions/releases/latest")
     .then((r) => (r.ok ? r.json() : Promise.reject()))
@@ -58,7 +71,7 @@
       const version = rel.tag_name.replace(/^v/, "");
       const mo = Math.round(exe.size / 1e6);
       document.querySelectorAll("[data-download]").forEach((a) => (a.href = exe.browser_download_url));
-      document.querySelectorAll("[data-version]").forEach((el) => (el.textContent = TXT.v(version)));
+      document.querySelectorAll("[data-version]").forEach((el) => (el.textContent = onMac ? TXT.m(version) : TXT.v(version)));
       document.querySelectorAll("[data-size]").forEach((el) => (el.textContent = TXT.s(version, mo)));
     })
     .catch(() => {});

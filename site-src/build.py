@@ -20,6 +20,7 @@ URL = "https://trame.shizeh.com"  # adresse du site (liens canoniques, hreflang,
 SHIZEH = "https://shizeh.com"
 
 DL = "https://github.com/shizeh/trame-versions/releases/latest"
+DL_MAC = "https://github.com/shizeh/trame-versions/releases/download/mac/Trame.dmg"
 STORE_GET = "https://get.microsoft.com/installer/download/9n85tsx3h531?referrer=appbadge"
 STORE_PAGE = "https://apps.microsoft.com/detail/9n85tsx3h531"
 ISSUES = "https://github.com/shizeh/trame-versions/issues/new/choose"
@@ -75,7 +76,7 @@ def jsonld(lang):
         "url": f"{URL}{L['home']}",
         "applicationCategory": "DesignApplication",
         "applicationSubCategory": t["seo_category"],
-        "operatingSystem": "Windows 10, Windows 11",
+        "operatingSystem": "Windows 10, Windows 11, macOS 11+",
         "inLanguage": ["fr", "en", "es", "de", "pt", "it", "nl", "pl", "sv"],
         "isAccessibleForFree": True,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
@@ -241,6 +242,7 @@ def home(lang):
     <p class="lede">{t['lede']}</p>
     <div class="hero-actions">
       <a class="btn" href="{DL}" data-download>{DOWNLOAD_ICON} {t['download_windows']}</a>
+      <a class="btn btn-light" href="{DL_MAC}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
       {store_badge(lang, STORE_GET, t['store_get'])}
       <p class="hero-meta">{t['hero_meta']} <span data-version>{t['windows']}</span></p>
     </div>
@@ -333,6 +335,7 @@ def news(lang):
 </section>
 <section class="news-cta">
   <a class="btn" href="{DL}" data-download>{DOWNLOAD_ICON} {t['download_windows']}</a>
+  <a class="btn btn-light" href="{DL_MAC}" data-mac>{DOWNLOAD_ICON} {t['download_mac']}</a>
   {store_badge(lang, STORE_GET, t['store_get'])}
 </section>
 </main>
